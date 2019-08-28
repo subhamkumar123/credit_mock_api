@@ -1,0 +1,20 @@
+{
+    "creditScore": 60,
+    "creditScoreCutOff": 50,
+    "creditScoreToolTip": "A credit score is a measure of an individual’s ability to pay back the borrowed amount. It is the numerical representation of their creditworthiness. A credit score is a 3 digit number. You should always work towards reaching a credit score that is higher. A higher credit score offers you several benefits and helps you at the time of getting a loan or a credit card. Having a low credit score suggests you have not been a responsible borrower and have been slacking off repaying the borrowed sum. Credit scores are calculated by the credit bureaus in the country after taking into consideration several factors like the length of your credit history, repayment records, credit inquiries, among others.",
+    "maxCreditScore": 100,
+    "minCreditScore": 0,
+    "riskClass": {
+        "category": "HIGH",
+        "label": "1000",
+        "priority": 1
+    },
+    "scoreCardDetails": [
+        {
+            "formulaName": "string",
+            "output": 74,
+            "outputCutOff": 35,
+            "weight": 40
+        }
+    ]
+}

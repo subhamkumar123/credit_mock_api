@@ -1,0 +1,13 @@
+{
+    "insights": ["It is advisable to get personal guarantee."],
+    "recommendedCreditLimit": {
+        "amountLabel": "$1000",
+        "amountValue": 1000.01,
+        "symbol": "$"  
+    },
+    "requestedCreditLimit": {
+        "amountLabel": "$1000",
+        "amountValue": 1000.01,
+        "symbol": "$"
+    }
+}

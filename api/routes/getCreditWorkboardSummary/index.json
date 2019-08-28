@@ -1,0 +1,10 @@
+{
+    "autoApprovedApplications": 8,
+    "pendingInformationApplications": 2,
+    "readyToReviewApplications": 4,
+    "reviewedApplications": 2,
+    "userInfo": {
+        "userId": 1,
+        "username": "John"
+    }
+}

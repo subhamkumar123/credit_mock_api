@@ -1,0 +1,22 @@
+{
+    "applicationFilePath": "/S3/...",
+    "applicationStatus": "Ready To Review",
+    "applicationType": "New Application",
+    "companyInfo": {
+        "applicationInfo": [
+            {
+                "name": "company type",
+                "type": "string",
+                "value": "string"
+            }
+        ],
+        "references": [
+            {
+                "availableRefIds": [1, 2],
+                "awaitedRefIds": [1],
+                "referenceType": "Bank"
+            }
+        ]
+    },
+    "receivedApplication": "2 Days Ago"
+}
