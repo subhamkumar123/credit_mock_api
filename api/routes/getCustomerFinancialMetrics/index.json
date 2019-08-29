@@ -1,15 +1,121 @@
-{
+[
+  {
+    "customerId": 0,
+    "requestId": 1001,
     "agencyField": [
-        {
-            "comments": "8+ is good",
-            "cutOff1Value": 60,
-            "fieldType": "number",
-            "isAcceptable": "for CC it is false",
-            "maxValue": 100,
-            "minValue": 0,
-            "name": "Paydex",
-            "possibleValues": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade",
-            "value": "30"
-        }
+      {
+        "comments": "8+ is good",
+        "cutOff1Value": 60,
+        "fieldType": "number",
+        "isAcceptable": "for CC it is false",
+        "maxValue": 100,
+        "minValue": 0,
+        "name": "Paydex",
+        "possibleValues": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade",
+        "value": "30"
+      }
     ]
-}
+  },
+  {
+    "customerId": 1,
+    "requestId": 1002,
+    "agencyField": [
+      {
+        "comments": "8+ is good",
+        "cutOff1Value": 60,
+        "fieldType": "number",
+        "isAcceptable": "for CC it is false",
+        "maxValue": 100,
+        "minValue": 0,
+        "name": "Paydex",
+        "possibleValues": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade",
+        "value": "30"
+      }
+    ]
+  },
+  {
+    "customerId": 2,
+    "requestId": 1003,
+    "agencyField": [
+      {
+        "comments": "8+ is good",
+        "cutOff1Value": 60,
+        "fieldType": "number",
+        "isAcceptable": "for CC it is false",
+        "maxValue": 100,
+        "minValue": 0,
+        "name": "Paydex",
+        "possibleValues": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade",
+        "value": "30"
+      }
+    ]
+  },
+  {
+    "customerId": 3,
+    "requestId": 1004,
+    "agencyField": [
+      {
+        "comments": "8+ is good",
+        "cutOff1Value": 60,
+        "fieldType": "number",
+        "isAcceptable": "for CC it is false",
+        "maxValue": 100,
+        "minValue": 0,
+        "name": "Paydex",
+        "possibleValues": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade",
+        "value": "30"
+      }
+    ]
+  },
+  {
+    "customerId": 4,
+    "requestId": 1005,
+    "agencyField": [
+      {
+        "comments": "8+ is good",
+        "cutOff1Value": 60,
+        "fieldType": "number",
+        "isAcceptable": "for CC it is false",
+        "maxValue": 100,
+        "minValue": 0,
+        "name": "Paydex",
+        "possibleValues": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade",
+        "value": "30"
+      }
+    ]
+  },
+  {
+    "customerId": 5,
+    "requestId": 1006,
+    "agencyField": [
+      {
+        "comments": "8+ is good",
+        "cutOff1Value": 60,
+        "fieldType": "number",
+        "isAcceptable": "for CC it is false",
+        "maxValue": 100,
+        "minValue": 0,
+        "name": "Paydex",
+        "possibleValues": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade",
+        "value": "30"
+      }
+    ]
+  },
+  {
+    "customerId": 6,
+    "requestId": 1007,
+    "agencyField": [
+      {
+        "comments": "8+ is good",
+        "cutOff1Value": 60,
+        "fieldType": "number",
+        "isAcceptable": "for CC it is false",
+        "maxValue": 100,
+        "minValue": 0,
+        "name": "Paydex",
+        "possibleValues": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade",
+        "value": "30"
+      }
+    ]
+  }
+]

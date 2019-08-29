@@ -104,7 +104,7 @@
         "amountValue": 20000000,
         "symbol": "$"
       },
-      "requestId": 1003,
+      "requestId": 1004,
       "riskClass": {
         "category": "LOW",
         "label": "LOW RISk",
@@ -139,7 +139,7 @@
         "amountValue": 1000000,
         "symbol": "$"
       },
-      "requestId": 1003,
+      "requestId": 1005,
       "timeLapsed": "Today"
     },
     {
@@ -172,7 +172,7 @@
         "amountValue": 2000000,
         "symbol": "$"
       },
-      "requestId": 1003,
+      "requestId": 1006,
       "riskClass": {
         "category": "LOW",
         "label": "LOW RISk",
@@ -203,7 +203,7 @@
       },
       "bankReference": "Pending",
       "createdDate": "10/10/2019",
-      "customerId": 7,
+      "customerId": 6,
       "customerName": "United Heat and Power INC",
       "customerNumber": "HR123242342",
       "recommendedCreditLimit": {
@@ -211,7 +211,7 @@
         "amountValue": 2000000,
         "symbol": "$"
       },
-      "requestId": 1004,
+      "requestId": 1007,
       "riskClass": {
         "category": "LOW",
         "label": "LOW RISk",

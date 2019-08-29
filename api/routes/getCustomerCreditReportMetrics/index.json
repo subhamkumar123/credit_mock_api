@@ -1,24 +1,184 @@
-{
+[
+  {
+    "customerId": 0,
+    "requestId": 1001,
     "creditReportSummary": [
-        {
-            "agencyField": [
-                {
-                    "comments": "8+ is good",
-                    "cutOff1Value": 60,
-                    "fieldType": "number",
-                    "isAcceptable": "for CC it is false",
-                    "maxValue": 100,
-                    "minValue": 0,
-                    "name": "Paydex",
-                    "possibleValues": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade",
-                    "value": "30"
-                }
-            ],
-            "agencyLogoPath": "yet to decide",
-            "agencyName": "DNB Global",
-            "providerDataTypeId": 123,
-            "reportFilePath": "/S3..."
-        }
+      {
+        "agencyField": [
+          {
+            "comments": "8+ is good",
+            "cutOff1Value": 60,
+            "fieldType": "number",
+            "isAcceptable": "for CC it is false",
+            "maxValue": 100,
+            "minValue": 0,
+            "name": "Paydex",
+            "possibleValues": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade",
+            "value": "30"
+          }
+        ],
+        "agencyLogoPath": "yet to decide",
+        "agencyName": "DNB Global",
+        "providerDataTypeId": 123,
+        "reportFilePath": "/S3..."
+      }
     ],
     "creditReportToolTip": "A credit report is a detailed breakdown of an individual's credit history prepared by a credit bureau. Credit bureaus collect financial information about individuals and create credit reports based on that information, and lenders use the reports along with other details to determine loan applicants' creditworthiness."
-}
+  },
+  {
+    "customerId": 1,
+    "requestId": 1002,
+    "creditReportSummary": [
+      {
+        "agencyField": [
+          {
+            "comments": "8+ is good",
+            "cutOff1Value": 60,
+            "fieldType": "number",
+            "isAcceptable": "for CC it is false",
+            "maxValue": 100,
+            "minValue": 0,
+            "name": "Paydex",
+            "possibleValues": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade",
+            "value": "30"
+          }
+        ],
+        "agencyLogoPath": "yet to decide",
+        "agencyName": "DNB Global",
+        "providerDataTypeId": 123,
+        "reportFilePath": "/S3..."
+      }
+    ],
+    "creditReportToolTip": "A credit report is a detailed breakdown of an individual's credit history prepared by a credit bureau. Credit bureaus collect financial information about individuals and create credit reports based on that information, and lenders use the reports along with other details to determine loan applicants' creditworthiness."
+  },
+  {
+    "customerId": 2,
+    "requestId": 1003,
+    "creditReportSummary": [
+      {
+        "agencyField": [
+          {
+            "comments": "8+ is good",
+            "cutOff1Value": 60,
+            "fieldType": "number",
+            "isAcceptable": "for CC it is false",
+            "maxValue": 100,
+            "minValue": 0,
+            "name": "Paydex",
+            "possibleValues": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade",
+            "value": "30"
+          }
+        ],
+        "agencyLogoPath": "yet to decide",
+        "agencyName": "DNB Global",
+        "providerDataTypeId": 123,
+        "reportFilePath": "/S3..."
+      }
+    ],
+    "creditReportToolTip": "A credit report is a detailed breakdown of an individual's credit history prepared by a credit bureau. Credit bureaus collect financial information about individuals and create credit reports based on that information, and lenders use the reports along with other details to determine loan applicants' creditworthiness."
+  },
+  {
+    "customerId": 3,
+    "requestId": 1004,
+    "creditReportSummary": [
+      {
+        "agencyField": [
+          {
+            "comments": "8+ is good",
+            "cutOff1Value": 60,
+            "fieldType": "number",
+            "isAcceptable": "for CC it is false",
+            "maxValue": 100,
+            "minValue": 0,
+            "name": "Paydex",
+            "possibleValues": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade",
+            "value": "30"
+          }
+        ],
+        "agencyLogoPath": "yet to decide",
+        "agencyName": "DNB Global",
+        "providerDataTypeId": 123,
+        "reportFilePath": "/S3..."
+      }
+    ],
+    "creditReportToolTip": "A credit report is a detailed breakdown of an individual's credit history prepared by a credit bureau. Credit bureaus collect financial information about individuals and create credit reports based on that information, and lenders use the reports along with other details to determine loan applicants' creditworthiness."
+  },
+  {
+    "customerId": 4,
+    "requestId": 1005,
+    "creditReportSummary": [
+      {
+        "agencyField": [
+          {
+            "comments": "8+ is good",
+            "cutOff1Value": 60,
+            "fieldType": "number",
+            "isAcceptable": "for CC it is false",
+            "maxValue": 100,
+            "minValue": 0,
+            "name": "Paydex",
+            "possibleValues": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade",
+            "value": "30"
+          }
+        ],
+        "agencyLogoPath": "yet to decide",
+        "agencyName": "DNB Global",
+        "providerDataTypeId": 123,
+        "reportFilePath": "/S3..."
+      }
+    ],
+    "creditReportToolTip": "A credit report is a detailed breakdown of an individual's credit history prepared by a credit bureau. Credit bureaus collect financial information about individuals and create credit reports based on that information, and lenders use the reports along with other details to determine loan applicants' creditworthiness."
+  },
+  {
+    "customerId": 5,
+    "requestId": 1006,
+    "creditReportSummary": [
+      {
+        "agencyField": [
+          {
+            "comments": "8+ is good",
+            "cutOff1Value": 60,
+            "fieldType": "number",
+            "isAcceptable": "for CC it is false",
+            "maxValue": 100,
+            "minValue": 0,
+            "name": "Paydex",
+            "possibleValues": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade",
+            "value": "30"
+          }
+        ],
+        "agencyLogoPath": "yet to decide",
+        "agencyName": "DNB Global",
+        "providerDataTypeId": 123,
+        "reportFilePath": "/S3..."
+      }
+    ],
+    "creditReportToolTip": "A credit report is a detailed breakdown of an individual's credit history prepared by a credit bureau. Credit bureaus collect financial information about individuals and create credit reports based on that information, and lenders use the reports along with other details to determine loan applicants' creditworthiness."
+  },
+  {
+    "customerId": 6,
+    "requestId": 1007,
+    "creditReportSummary": [
+      {
+        "agencyField": [
+          {
+            "comments": "8+ is good",
+            "cutOff1Value": 60,
+            "fieldType": "number",
+            "isAcceptable": "for CC it is false",
+            "maxValue": 100,
+            "minValue": 0,
+            "name": "Paydex",
+            "possibleValues": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade",
+            "value": "30"
+          }
+        ],
+        "agencyLogoPath": "yet to decide",
+        "agencyName": "DNB Global",
+        "providerDataTypeId": 123,
+        "reportFilePath": "/S3..."
+      }
+    ],
+    "creditReportToolTip": "A credit report is a detailed breakdown of an individual's credit history prepared by a credit bureau. Credit bureaus collect financial information about individuals and create credit reports based on that information, and lenders use the reports along with other details to determine loan applicants' creditworthiness."
+  }
+]

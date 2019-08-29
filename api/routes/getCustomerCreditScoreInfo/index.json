@@ -1,20 +1,156 @@
-{
-    "creditScore": 60,
+[
+  {
+    "customerId": 0,
+    "requestId": 1001,
+    "creditScore": 80,
     "creditScoreCutOff": 50,
     "creditScoreToolTip": "A credit score is a measure of an individual’s ability to pay back the borrowed amount. It is the numerical representation of their creditworthiness. A credit score is a 3 digit number. You should always work towards reaching a credit score that is higher. A higher credit score offers you several benefits and helps you at the time of getting a loan or a credit card. Having a low credit score suggests you have not been a responsible borrower and have been slacking off repaying the borrowed sum. Credit scores are calculated by the credit bureaus in the country after taking into consideration several factors like the length of your credit history, repayment records, credit inquiries, among others.",
     "maxCreditScore": 100,
     "minCreditScore": 0,
     "riskClass": {
-        "category": "HIGH",
-        "label": "1000",
-        "priority": 1
+      "category": "HIGH",
+      "label": "1000",
+      "priority": 1
     },
     "scoreCardDetails": [
-        {
-            "formulaName": "string",
-            "output": 74,
-            "outputCutOff": 35,
-            "weight": 40
-        }
+      {
+        "formulaName": "string",
+        "output": 74,
+        "outputCutOff": 35,
+        "weight": 40
+      }
     ]
-}
+  },
+  {
+    "customerId": 1,
+    "requestId": 1002,
+    "creditScore": 50,
+    "creditScoreCutOff": 50,
+    "creditScoreToolTip": "A credit score is a measure of an individual’s ability to pay back the borrowed amount. It is the numerical representation of their creditworthiness. A credit score is a 3 digit number. You should always work towards reaching a credit score that is higher. A higher credit score offers you several benefits and helps you at the time of getting a loan or a credit card. Having a low credit score suggests you have not been a responsible borrower and have been slacking off repaying the borrowed sum. Credit scores are calculated by the credit bureaus in the country after taking into consideration several factors like the length of your credit history, repayment records, credit inquiries, among others.",
+    "maxCreditScore": 100,
+    "minCreditScore": 0,
+    "riskClass": {
+      "category": "HIGH",
+      "label": "1000",
+      "priority": 1
+    },
+    "scoreCardDetails": [
+      {
+        "formulaName": "string",
+        "output": 74,
+        "outputCutOff": 35,
+        "weight": 40
+      }
+    ]
+  },
+  {
+    "customerId": 2,
+    "requestId": 1003,
+    "creditScore": 80,
+    "creditScoreCutOff": 50,
+    "creditScoreToolTip": "A credit score is a measure of an individual’s ability to pay back the borrowed amount. It is the numerical representation of their creditworthiness. A credit score is a 3 digit number. You should always work towards reaching a credit score that is higher. A higher credit score offers you several benefits and helps you at the time of getting a loan or a credit card. Having a low credit score suggests you have not been a responsible borrower and have been slacking off repaying the borrowed sum. Credit scores are calculated by the credit bureaus in the country after taking into consideration several factors like the length of your credit history, repayment records, credit inquiries, among others.",
+    "maxCreditScore": 100,
+    "minCreditScore": 0,
+    "riskClass": {
+      "category": "HIGH",
+      "label": "1000",
+      "priority": 1
+    },
+    "scoreCardDetails": [
+      {
+        "formulaName": "string",
+        "output": 74,
+        "outputCutOff": 35,
+        "weight": 40
+      }
+    ]
+  },
+  {
+    "customerId": 3,
+    "requestId": 1004,
+    "creditScore": 40,
+    "creditScoreCutOff": 50,
+    "creditScoreToolTip": "A credit score is a measure of an individual’s ability to pay back the borrowed amount. It is the numerical representation of their creditworthiness. A credit score is a 3 digit number. You should always work towards reaching a credit score that is higher. A higher credit score offers you several benefits and helps you at the time of getting a loan or a credit card. Having a low credit score suggests you have not been a responsible borrower and have been slacking off repaying the borrowed sum. Credit scores are calculated by the credit bureaus in the country after taking into consideration several factors like the length of your credit history, repayment records, credit inquiries, among others.",
+    "maxCreditScore": 100,
+    "minCreditScore": 0,
+    "riskClass": {
+      "category": "HIGH",
+      "label": "1000",
+      "priority": 1
+    },
+    "scoreCardDetails": [
+      {
+        "formulaName": "string",
+        "output": 74,
+        "outputCutOff": 35,
+        "weight": 40
+      }
+    ]
+  },
+  {
+    "customerId": 4,
+    "requestId": 1005,
+    "creditScore": 55,
+    "creditScoreCutOff": 50,
+    "creditScoreToolTip": "A credit score is a measure of an individual’s ability to pay back the borrowed amount. It is the numerical representation of their creditworthiness. A credit score is a 3 digit number. You should always work towards reaching a credit score that is higher. A higher credit score offers you several benefits and helps you at the time of getting a loan or a credit card. Having a low credit score suggests you have not been a responsible borrower and have been slacking off repaying the borrowed sum. Credit scores are calculated by the credit bureaus in the country after taking into consideration several factors like the length of your credit history, repayment records, credit inquiries, among others.",
+    "maxCreditScore": 100,
+    "minCreditScore": 0,
+    "riskClass": {
+      "category": "HIGH",
+      "label": "1000",
+      "priority": 1
+    },
+    "scoreCardDetails": [
+      {
+        "formulaName": "string",
+        "output": 74,
+        "outputCutOff": 35,
+        "weight": 40
+      }
+    ]
+  },
+  {
+    "customerId": 5,
+    "requestId": 1006,
+    "creditScore": 70,
+    "creditScoreCutOff": 50,
+    "creditScoreToolTip": "A credit score is a measure of an individual’s ability to pay back the borrowed amount. It is the numerical representation of their creditworthiness. A credit score is a 3 digit number. You should always work towards reaching a credit score that is higher. A higher credit score offers you several benefits and helps you at the time of getting a loan or a credit card. Having a low credit score suggests you have not been a responsible borrower and have been slacking off repaying the borrowed sum. Credit scores are calculated by the credit bureaus in the country after taking into consideration several factors like the length of your credit history, repayment records, credit inquiries, among others.",
+    "maxCreditScore": 100,
+    "minCreditScore": 0,
+    "riskClass": {
+      "category": "HIGH",
+      "label": "1000",
+      "priority": 1
+    },
+    "scoreCardDetails": [
+      {
+        "formulaName": "string",
+        "output": 74,
+        "outputCutOff": 35,
+        "weight": 40
+      }
+    ]
+  },
+  {
+    "customerId": 6,
+    "requestId": 1007,
+    "creditScore": 90,
+    "creditScoreCutOff": 50,
+    "creditScoreToolTip": "A credit score is a measure of an individual’s ability to pay back the borrowed amount. It is the numerical representation of their creditworthiness. A credit score is a 3 digit number. You should always work towards reaching a credit score that is higher. A higher credit score offers you several benefits and helps you at the time of getting a loan or a credit card. Having a low credit score suggests you have not been a responsible borrower and have been slacking off repaying the borrowed sum. Credit scores are calculated by the credit bureaus in the country after taking into consideration several factors like the length of your credit history, repayment records, credit inquiries, among others.",
+    "maxCreditScore": 100,
+    "minCreditScore": 0,
+    "riskClass": {
+      "category": "HIGH",
+      "label": "1000",
+      "priority": 1
+    },
+    "scoreCardDetails": [
+      {
+        "formulaName": "string",
+        "output": 74,
+        "outputCutOff": 35,
+        "weight": 40
+      }
+    ]
+  }
+]

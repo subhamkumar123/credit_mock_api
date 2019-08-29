@@ -1,13 +1,107 @@
-{
+[
+  {
+    "customerId": 0,
+    "requestId": 1001,
     "insights": ["It is advisable to get personal guarantee."],
     "recommendedCreditLimit": {
-        "amountLabel": "$1000",
-        "amountValue": 1000.01,
-        "symbol": "$"  
+      "amountLabel": "$1000",
+      "amountValue": 1000.01,
+      "symbol": "$"
     },
     "requestedCreditLimit": {
-        "amountLabel": "$1000",
-        "amountValue": 1000.01,
-        "symbol": "$"
+      "amountLabel": "$1000",
+      "amountValue": 1000.01,
+      "symbol": "$"
     }
-}
+  },
+  {
+    "customerId": 1,
+    "requestId": 1002,
+    "insights": ["It is advisable to get personal guarantee."],
+    "recommendedCreditLimit": {
+      "amountLabel": "$1000",
+      "amountValue": 1000.01,
+      "symbol": "$"
+    },
+    "requestedCreditLimit": {
+      "amountLabel": "$1000",
+      "amountValue": 1000.01,
+      "symbol": "$"
+    }
+  },
+  {
+    "customerId": 2,
+    "requestId": 1003,
+    "insights": ["It is advisable to get personal guarantee."],
+    "recommendedCreditLimit": {
+      "amountLabel": "$1000",
+      "amountValue": 1000.01,
+      "symbol": "$"
+    },
+    "requestedCreditLimit": {
+      "amountLabel": "$1000",
+      "amountValue": 1000.01,
+      "symbol": "$"
+    }
+  },
+  {
+    "customerId": 3,
+    "requestId": 1004,
+    "insights": ["It is advisable to get personal guarantee."],
+    "recommendedCreditLimit": {
+      "amountLabel": "$1000",
+      "amountValue": 1000.01,
+      "symbol": "$"
+    },
+    "requestedCreditLimit": {
+      "amountLabel": "$1000",
+      "amountValue": 1000.01,
+      "symbol": "$"
+    }
+  },
+  {
+    "customerId": 4,
+    "requestId": 1005,
+    "insights": ["It is advisable to get personal guarantee."],
+    "recommendedCreditLimit": {
+      "amountLabel": "$1000",
+      "amountValue": 1000.01,
+      "symbol": "$"
+    },
+    "requestedCreditLimit": {
+      "amountLabel": "$1000",
+      "amountValue": 1000.01,
+      "symbol": "$"
+    }
+  },
+  {
+    "customerId": 5,
+    "requestId": 1006,
+    "insights": ["It is advisable to get personal guarantee."],
+    "recommendedCreditLimit": {
+      "amountLabel": "$1000",
+      "amountValue": 1000.01,
+      "symbol": "$"
+    },
+    "requestedCreditLimit": {
+      "amountLabel": "$1000",
+      "amountValue": 1000.01,
+      "symbol": "$"
+    }
+  },
+  {
+    "customerId": 6,
+    "requestId": 1007,
+    "insights": ["It is advisable to get personal guarantee."],
+    "recommendedCreditLimit": {
+      "amountLabel": "$1000",
+      "amountValue": 1000.01,
+      "symbol": "$"
+    },
+    "requestedCreditLimit": {
+      "amountLabel": "$1000",
+      "amountValue": 1000.01,
+      "symbol": "$"
+    }
+  }
+]
