@@ -7,3 +7,7 @@ This repository is maintained for Credit tovo UI
 
 # Start API
 `npm start`
+
+# Access Swagger UI
+Open up the below URL in a browser :
+`http://localhost:4000/docs/v1`
