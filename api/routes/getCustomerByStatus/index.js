@@ -1,12 +1,13 @@
-const express = require("express");
-const router = express.Router();
+const express = require('express');
 
-const data = require("./index.json");
-let multer = require("multer")();
-router.post("/", multer.none(), function(req, res, next) {
-  let requestData = JSON.parse(req.body.data);
-  let response = {};
-  if (requestData.status === "Ready to Review") {
+const router = express.Router();
+const multer = require('multer')();
+const data = require('./index.json');
+
+router.post('/', multer.none(), (req, res) => {
+  const requestData = JSON.parse(req.body.data);
+  const response = {};
+  if (requestData.status === 'Ready to Review') {
     // let customerInfo = data.customerInfo.filter(customer => {
     //   if (
     //     customer.bankReference === "Available" &&
@@ -17,9 +18,9 @@ router.post("/", multer.none(), function(req, res, next) {
     // });
 
     response.customerInfo = data.customerInfo;
-    response.requestStatus = "Ready to Review";
+    response.requestStatus = 'Ready to Review';
   }
-  if (requestData.status === "Pending Information") {
+  if (requestData.status === 'Pending Information') {
     // let customerInfo = data.customerInfo.filter(customer => {
     //   if (
     //     customer.bankReference === "Pending" ||
@@ -30,9 +31,9 @@ router.post("/", multer.none(), function(req, res, next) {
     // });
 
     response.customerInfo = data.customerInfo;
-    response.requestStatus = "Pending Information";
+    response.requestStatus = 'Pending Information';
   }
-  if (requestData.status === "Auto approved") {
+  if (requestData.status === 'Auto approved') {
     // let customerInfo = data.customerInfo.filter(customer => {
     //   if (
     //     customer.bankReference === "Available" &&
@@ -44,7 +45,7 @@ router.post("/", multer.none(), function(req, res, next) {
     // });
 
     response.customerInfo = data.customerInfo;
-    response.requestStatus = "Auto approved";
+    response.requestStatus = 'Auto approved';
   }
   res.send(response);
 });

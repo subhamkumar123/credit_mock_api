@@ -146,6 +146,38 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ApproveCustomer'
+  /getAllCamNotesList.do:
+    post:
+      operationId: View Notes
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/viewNotesRequest'
+        required: true
+      responses:
+        200:
+          description: Get customer reference information.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CustomerNotes'
+  /updateNextReviewDate.do:
+    post:
+      operationId: Update next review date
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/NextReviewDateRequest'
+        required: true
+      responses:
+        200:
+          description: update next review date
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/NextReviewDate'
 components:
   schemas:
     CreditWorkboard:
@@ -735,3 +767,50 @@ components:
           type: integer
           example: 1
       description: User info  to be shown on side bar
+    viewNotesRequest:
+      type: object
+      properties:
+        selValue:
+          type: string
+          description: category of notes to be displayed. From tovo value will always
+            be 'All Notes'
+          example: All Notes
+        fkCustomerMapId:
+          type: integer
+          description: customer id
+          example: 1234
+        creditRequestId:
+          type: integer
+          description: unique request id
+          example: 12345
+    NextReviewDateRequest:
+      type: object
+      properties:
+        nextReviewDate:
+          type: string
+        customerMapId:
+          type: integer
+    NextReviewDate:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        msg:
+          type: string
+          example: Updated Next Review Date Successfully
+    CustomerNotes:
+      type: object
+      properties:
+        notes:
+          type: string
+          description: Notes content
+          example: Credit Ratings from DNBGLOBAL retrieved for customer
+        createUser:
+          type: string
+          description: create user
+          example: John Smith
+        createTime:
+          type: string
+          description: notes creation time in format YYYY-MM-dd HH:mm:ss
+          example: 2017-07-31 12:19:50
