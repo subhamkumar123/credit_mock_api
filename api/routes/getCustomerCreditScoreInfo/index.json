@@ -12,14 +12,13 @@
       "label": "1000",
       "priority": 1
     },
-    "scoreCardDetails": [
-      {
-        "formulaName": "string",
-        "output": 74,
-        "outputCutOff": 35,
-        "weight": 40
-      }
-    ]
+    "scoreCardDetails": [ 
+      { "formulaName": "DB Global", "output": 74, "outputCutOff": 35, "weight": 40 },
+      { "formulaName": "Experian", "output": 73, "outputCutOff": 85, "weight": 50 },
+      { "formulaName": "Financial", "output": 89, "outputCutOff": 85, "weight": 90 },
+      { "formulaName": "Company Info", "output": 43, "outputCutOff": 85, "weight": 90 },
+      { "formulaName": "Some more", "output": 82, "outputCutOff": 69, "weight": 90 },
+      { "formulaName": "Last", "output": 71, "outputCutOff": 75, "weight": 90 } ]
   },
   {
     "customerId": 1,

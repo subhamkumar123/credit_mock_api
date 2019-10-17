@@ -13,7 +13,14 @@
             "maxValue": 100,
             "minValue": 0,
             "name": "Paydex",
-            "possibleValues": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade",
+            "possibleValues": [
+              "AA - Highest Grade",
+              "AB - Good Grade",
+              "BB - Upper Medium Grade",
+              "BC - Lower Medium Grade",
+              "CC - Average Grade",
+              "CD - Below Average Grade"
+            ],
             "value": "30"
           }
         ],
@@ -39,7 +46,14 @@
             "maxValue": 100,
             "minValue": 0,
             "name": "Paydex",
-            "possibleValues": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade",
+            "possibleValues": [
+              "AA - Highest Grade",
+              "AB - Good Grade",
+              "BB - Upper Medium Grade",
+              "BC - Lower Medium Grade",
+              "CC - Average Grade",
+              "CD - Below Average Grade"
+            ],
             "value": "30"
           }
         ],
@@ -65,7 +79,14 @@
             "maxValue": 100,
             "minValue": 0,
             "name": "Paydex",
-            "possibleValues": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade",
+            "possibleValues": [
+              "AA - Highest Grade",
+              "AB - Good Grade",
+              "BB - Upper Medium Grade",
+              "BC - Lower Medium Grade",
+              "CC - Average Grade",
+              "CD - Below Average Grade"
+            ],
             "value": "30"
           }
         ],
@@ -91,7 +112,14 @@
             "maxValue": 100,
             "minValue": 0,
             "name": "Paydex",
-            "possibleValues": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade",
+            "possibleValues": [
+              "AA - Highest Grade",
+              "AB - Good Grade",
+              "BB - Upper Medium Grade",
+              "BC - Lower Medium Grade",
+              "CC - Average Grade",
+              "CD - Below Average Grade"
+            ],
             "value": "30"
           }
         ],
@@ -117,7 +145,14 @@
             "maxValue": 100,
             "minValue": 0,
             "name": "Paydex",
-            "possibleValues": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade",
+            "possibleValues": [
+              "AA - Highest Grade",
+              "AB - Good Grade",
+              "BB - Upper Medium Grade",
+              "BC - Lower Medium Grade",
+              "CC - Average Grade",
+              "CD - Below Average Grade"
+            ],
             "value": "30"
           }
         ],
@@ -143,7 +178,14 @@
             "maxValue": 100,
             "minValue": 0,
             "name": "Paydex",
-            "possibleValues": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade",
+            "possibleValues": [
+              "AA - Highest Grade",
+              "AB - Good Grade",
+              "BB - Upper Medium Grade",
+              "BC - Lower Medium Grade",
+              "CC - Average Grade",
+              "CD - Below Average Grade"
+            ],
             "value": "30"
           }
         ],
@@ -169,7 +211,14 @@
             "maxValue": 100,
             "minValue": 0,
             "name": "Paydex",
-            "possibleValues": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade",
+            "possibleValues": [
+              "AA - Highest Grade",
+              "AB - Good Grade",
+              "BB - Upper Medium Grade",
+              "BC - Lower Medium Grade",
+              "CC - Average Grade",
+              "CD - Below Average Grade"
+            ],
             "value": "30"
           }
         ],
