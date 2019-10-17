@@ -9,6 +9,9 @@ const getCustomerInsights = require('./getCustomerInsights');
 const getAllCamNotesList = require('./getAllCamNotesList');
 const updateNextReviewDate = require('./updateNextReviewDate');
 const getRejectReasons = require('./getRejectReasons');
+const addCustomerNotes = require('./addCustomerNotes');
+const getReferenceInfo = require('./getReferenceInfo');
+const sendReminderEmail = require('./sendReminderEmail');
 
 const router = express.Router();
 
@@ -25,5 +28,8 @@ router.use('/getCustomerInsights.do', getCustomerInsights);
 router.use('/getAllCamNotesList.do', getAllCamNotesList);
 router.use('/updateNextReviewDate.do', updateNextReviewDate);
 router.use('/getRejectReasons.do', getRejectReasons);
+router.use('/addCustomerNotes.do', addCustomerNotes);
+router.use('/getReferenceInfo.do', getReferenceInfo);
+router.use('/sendReminderEmail.do', sendReminderEmail);
 
 module.exports = router;

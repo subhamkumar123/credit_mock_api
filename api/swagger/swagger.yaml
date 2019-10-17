@@ -178,6 +178,22 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/NextReviewDate'
+  /sendReminderEmail.do:
+    post:
+      operationId: Send Reminder Email
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SendReminderEmailRequest'
+        required: true
+      responses:
+        200:
+          description: update next review date
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SendReminderEmail'
   /getRejectReasons.do:
    post:
      operationId: get reject reasons
@@ -188,6 +204,22 @@ paths:
            application/json:
              schema:
                $ref: '#/components/schemas/RejectReasons'
+  /addCustomerNotes.do:
+    post:
+      operationId: Add Customer Notes
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AddCustomerNotesRequest'
+        required: true
+      responses:
+        200:
+          description: Add Customer Notes
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AddCustomerNotes'
 components:
   schemas:
     CreditWorkboard:
@@ -246,29 +278,38 @@ components:
           type: integer
           description: Internal customer request unique id
           example: 1001
-        recommendedCreditLimit:
-          $ref: '#/components/schemas/Currency'
-        approvedCreditLimit:
-          $ref: '#/components/schemas/Currency'
-        riskClass:
-          $ref: '#/components/schemas/RiskClass'
-        createdDate:
-          type: string
-          example: 2019-04-12
-        timeLapsed:
-          type: string
-          example: toDay
-        bankReference:
-          type: string
-          example: Available
-        tradeReference:
-          type: string
-          example: Pending
-        applicationInfo:
-          type: array
-          description: application information
-          items:
-            $ref: '#/components/schemas/ApplicationInfo'
+    recommendedCreditLimit:
+      type: array
+      description: Credit limit recommended by system
+      items:
+        $ref: '#/components/schemas/Currency'
+    approvedCreditLimit:
+      type: array
+      description: Credit limit approved
+      items:
+        $ref: '#/components/schemas/Currency'
+    riskClass:
+      type: array
+      description: calculated risk class for customer
+      items:
+        $ref: '#/components/schemas/RiskClass'
+    createdDate:
+      type: string
+      example: 2019-04-12
+    timeLapsed:
+      type: string
+      example: toDay
+    bankReference:
+      type: string
+      example: Available
+    tradeReference:
+      type: string
+      example: Pending
+    applicationInfo:
+      type: array
+      description: application information
+      items:
+        $ref: '#/components/schemas/ApplicationInfo'
     ApplicationInfo:
       type: object
       properties:
@@ -341,7 +382,10 @@ components:
           description: application status
           example: Ready To Review
         CompanyInfo:
-          $ref: '#/components/schemas/CompanyInfo'
+          type: array
+          description: company information
+          items:
+            $ref: '#/components/schemas/CompanyInfo'
     CompanyInfo:
       title: COMPANY INFO
       type: object
@@ -412,7 +456,10 @@ components:
           description: Credit score
           example: 60
         riskClass:
-          $ref: '#/components/schemas/RiskClass'
+          type: array
+          description: calculated risk class for customer
+          items:
+            $ref: '#/components/schemas/RiskClass'
         scoreCardDetails:
           type: array
           description: detailed categorisation of each agency for scoring a customer
@@ -549,11 +596,17 @@ components:
       title: INSIGHTS
       type: object
       properties:
-        requestedCreditLimit:
-          $ref: '#/components/schemas/Currency'
-        recommendedCreditLimit:
-          $ref: '#/components/schemas/Currency'
-        insights:
+       requestedCreditLimit:
+          type: array
+          description: credit limit requested by customer
+          items:
+            $ref: '#/components/schemas/Currency'
+       recommendedCreditLimit:
+          type: array
+          description: recommended credit limit by system
+          items:
+            $ref: '#/components/schemas/Currency'
+       insights:
           type: array
           description: detailed insight of the customer. View all button should be
             enabled only if the data is more than what is shown on the details screen
@@ -838,3 +891,156 @@ components:
                items:
                   type: string
                example: ["Not a legitimate business","Insufficient data","Already filed for Bankruptcy","Customer has not provided adequate credit info"]
+    SendReminderEmail:
+      type: object
+      properties:
+        title:
+          type: string
+          description: Title
+          example: Bank
+        referenceDetails:
+          type: array
+          description: Reference Details
+          items:
+            $ref: '#/components/schemas/ReferenceDetails'
+    ReferenceDetails:
+      type: object
+      properties:
+        referenceName:
+          type: string
+          description: Reference Name
+          example: Bank Reference
+        isVerified:
+          type: boolean
+          description: Is Verified
+          example: true
+        isReminderSent:
+          type: boolean
+          description: Is Reminder Sent (If it is true, sendReminder button will be
+            disabled)
+          example: true
+        address:
+          type: array
+          description: Reference Address
+          items:
+            $ref: '#/components/schemas/Address'
+        summaryLog:
+          type: array
+          description: Summary Log
+          items:
+            $ref: '#/components/schemas/SummaryLog'
+        fields:
+          type: array
+          description: Fields
+          items:
+            $ref: '#/components/schemas/Fields'
+    Address:
+      type: object
+      properties:
+        addressLine1:
+          type: string
+          description: Address Line1
+          example: DLF gate 1
+        addressLine2:
+          type: string
+          description: Address Line2
+          example: DLF gate 2
+        street:
+          type: string
+          description: Street
+          example: Gachibowli
+        city:
+          type: string
+          description: City
+          example: Hyderabad
+        state:
+          type: string
+          description: State
+          example: Telangana
+        country:
+          type: string
+          description: Country
+          example: India
+        zip:
+          type: string
+          description: Zip
+          example: "12345"
+        phoneNumber:
+          type: string
+          description: Phone Number
+          example: "1234561234"
+        emailId:
+          type: string
+          description: Email Id
+          example: abc.ds@highradius.com
+    SummaryLog:
+      type: object
+      properties:
+        summaryType:
+          type: string
+          description: Summary Type
+          enum:
+          - CORRESPONDENCE
+          - PROCESSING
+          - WORKFLOW
+          - REFERENCE
+        summary:
+          type: string
+          description: Summary
+          example: abc
+        createUser:
+          type: string
+          description: Create User
+          example: Admin Lonza
+        createDate:
+          type: string
+          description: Create Date
+          example: 2017-07-31 03:00:00
+    Fields:
+      type: object
+      properties:
+        name:
+          type: string
+          description: Field Name
+          example: Company Name
+        value:
+          type: object
+          description: Field Value
+          example: HighRadius
+        type:
+          type: string
+          description: Field Type
+          enum:
+          - string
+          - number
+          - amount
+    SendReminderEmailRequest:
+      type: object
+      properties:
+        creditRequestId:
+          type: integer
+        referenceType:
+          type: string
+          enum:
+          - Bank
+          - Trade
+    AddCustomerNotesRequest:
+      type: object
+      properties:
+        fkCustomerMapId:
+          type: integer
+        pkCamMapCreditRequestId:
+          type: integer
+        notes:
+          type: string
+        subject:
+          type: string
+    AddCustomerNotes:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+        msg:
+          type: string
+          example: Successfully Added Notes
