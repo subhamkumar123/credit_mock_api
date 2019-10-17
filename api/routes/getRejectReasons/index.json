@@ -1,0 +1,10 @@
+{
+  "title": "Reject Reasons",
+  "message": "Select your reason for rejection",
+  "rejectReasons": [
+    "Not a legitimate business",
+    "Insufficient data",
+    "Already filed for Bankruptcy",
+    "Customer has not provided adequate credit info"
+  ]
+}

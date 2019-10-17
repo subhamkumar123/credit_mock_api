@@ -178,6 +178,16 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/NextReviewDate'
+  /getRejectReasons.do:
+   post:
+     operationId: get reject reasons
+     responses:
+       200:
+         description: get reject reasons
+         content:
+           application/json:
+             schema:
+               $ref: '#/components/schemas/RejectReasons'
 components:
   schemas:
     CreditWorkboard:
@@ -814,3 +824,17 @@ components:
           type: string
           description: notes creation time in format YYYY-MM-dd HH:mm:ss
           example: 2017-07-31 12:19:50
+    RejectReasons:
+       type: object
+       properties:
+           title:
+               type: string
+               example: "Reject Reasons"
+           message:
+               type: string
+               example: "Select your reason for rejection"
+           rejectReasons:
+               type: array
+               items:
+                  type: string
+               example: ["Not a legitimate business","Insufficient data","Already filed for Bankruptcy","Customer has not provided adequate credit info"]

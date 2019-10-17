@@ -8,12 +8,12 @@ const getCustomerCreditReportMetrics = require('./getCustomerCreditReportMetrics
 const getCustomerInsights = require('./getCustomerInsights');
 const getAllCamNotesList = require('./getAllCamNotesList');
 const updateNextReviewDate = require('./updateNextReviewDate');
+const getRejectReasons = require('./getRejectReasons');
 
 const router = express.Router();
 
 router.use('/getCreditWorkboardSummary.do', getCreditWorkboardSummary);
 router.use('/getCustomersByStatus.do', getCustomersByStatus);
-
 router.use('/getCustomerCreditScoreInfo.do', getCustomerCreditScoreInfo);
 router.use('/getCustomerFinancialMetrics.do', getCustomerFinancialMetrics);
 router.use('/getApplicationAndCompanyInfo.do', getApplicationAndCompanyInfo);
@@ -24,5 +24,6 @@ router.use(
 router.use('/getCustomerInsights.do', getCustomerInsights);
 router.use('/getAllCamNotesList.do', getAllCamNotesList);
 router.use('/updateNextReviewDate.do', updateNextReviewDate);
+router.use('/getRejectReasons.do', getRejectReasons);
 
 module.exports = router;
