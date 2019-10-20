@@ -12,6 +12,10 @@ const getRejectReasons = require('./getRejectReasons');
 const addCustomerNotes = require('./addCustomerNotes');
 const getReferenceInfo = require('./getReferenceInfo');
 const sendReminderEmail = require('./sendReminderEmail');
+const approveCustomer = require('./approveCustomer');
+const getCommunicationHistory = require('./getCommunicationHistory');
+const sendCorrespondence = require('./sendCorrespondence');
+const getEmailTemplateDetails = require('./getEmailTemplateDetails');
 
 const router = express.Router();
 
@@ -31,5 +35,9 @@ router.use('/getRejectReasons.do', getRejectReasons);
 router.use('/addCustomerNotes.do', addCustomerNotes);
 router.use('/getReferenceInfo.do', getReferenceInfo);
 router.use('/sendReminderEmail.do', sendReminderEmail);
+router.use('/approveCustomer.do', approveCustomer);
+router.use('/getCommunicationHistory.do', getCommunicationHistory);
+router.use('/sendCorrespondence.do', sendCorrespondence);
+router.use('/getEmailTemplateDetails.do', getEmailTemplateDetails);
 
 module.exports = router;
