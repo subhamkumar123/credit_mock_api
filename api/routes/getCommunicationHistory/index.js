@@ -1,5 +1,5 @@
 const express = require('express');
-const data = require('./index.json.js');
+const data = require('./index.json');
 
 const router = express.Router();
 
