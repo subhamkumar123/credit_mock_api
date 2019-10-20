@@ -130,22 +130,6 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/CustomerReferenceInfo'
-  /approveCustomer.do:
-    post:
-      operationId: Approve customer
-      requestBody:
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/ApproveCustomerRequest'
-        required: true
-      responses:
-        200:
-          description: Approve customer.
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/ApproveCustomer'
   /getAllCamNotesList.do:
     post:
       operationId: View Notes
@@ -220,6 +204,86 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/AddCustomerNotes'
+  /getReferenceInfo.do:
+    post:
+      operationId: bank and trade ref drawer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ReferenceInfoRequest'
+        required: true
+      responses:
+        200:
+          description: bank and trade ref drawer
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SendReminderEmail'
+  /getEmailTemplateDetails.do:
+    post:
+      operationId: get email template details
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/EmailTemplateRequest'
+        required: true
+      responses:
+        200:
+          description: bank and trade ref drawer
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/EmailTemplateDetails'
+  /sendCorrespondence.do:
+    post:
+      operationId: send correspondence
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CorrespondenceRequest'
+        required: true
+      responses:
+        200:
+          description: bank and trade ref drawer
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CorrespondenceDetails'
+  /getCommunicationHistory.do:
+    post:
+      operationId: Communication History
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CommunicationHistoryRequest'
+        required: true
+      responses:
+        200:
+          description: bank and trade ref drawer
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CommunicationHistory'
+  /approveCustomer.do:
+    post:
+      operationId: Approve Customer
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ApproveCustomerRequest'
+        required: true
+      responses:
+        200:
+          description: bank and trade ref drawer
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SummaryView'
 components:
   schemas:
     CreditWorkboard:
@@ -1044,3 +1108,177 @@ components:
         msg:
           type: string
           example: Successfully Added Notes
+    ReferenceInfoRequest:
+      type: object
+      properties:
+        creditRequestId:
+          type: integer
+        referenceType:
+          type: string
+        customerId:
+          type: string
+    EmailTemplateRequest:
+      type: object
+      properties:
+        customerId:
+          type: integer
+        actionName:
+          type: string
+          enum:
+          - Ask for reference
+          - Get new reference
+    EmailTemplateDetails:
+      type: object
+      properties:
+        toEmailId:
+          type: string
+          example: jessica.jones@highradius.com
+        toEmailName:
+          type: string
+          example: Jessica Jones
+        subject:
+          type: string
+          example: subject of the email
+        body:
+          type: string
+          description: Body of the email. Template will not have parsed values.
+        corrHeaderId:
+          type: integer
+          description: Corr header is used for in house correspondence
+        corrTypeId:
+          type: integer
+          description: Corr type used for cac correspondence
+        emailTemplateId:
+          type: integer
+          description: Email template id used for cac correspondence
+        replyTo:
+          type: integer
+        senderEmail:
+          type: integer
+    CorrespondenceRequest:
+        type: object
+        properties:
+          customerId:
+            type: integer
+          creditRequestId:
+            type: integer
+          toEmailId:
+            type: string
+          subject:
+            type: string
+          body:
+            type: string
+          corrHeaderId:
+            type: integer
+          corrTypeId:
+            type: integer
+          emailTemplateId:
+            type: integer
+          replyTo:
+            type: string
+          senderEmail:
+            type: string
+    CorrespondenceDetails:
+      type: object
+      properties:
+        success:
+          type: boolean
+          example: true
+          enum:
+          - true
+          - false
+    CommunicationHistoryRequest:
+      type: object
+      properties:
+        customerId:
+          type: integer
+        creditRequestId:
+          type: integer
+    CommunicationHistory:
+      type: object
+      properties:
+        title:
+          type: string
+          example: COMMUNICATION HISTORY
+        communicationHistoryItems:
+          type: array
+          items:
+            $ref: '#/components/schemas/CommunicationHistoryItem'
+    CommunicationHistoryItem:
+      type: object
+      properties:
+        historyType:
+          type: string
+          enum:
+          - Automated Mail
+          - Custom Mail
+          - Bank Reference
+          - Trade Reference
+          - Note
+        correspondenceHistory:
+          $ref: '#/components/schemas/CorrespondenceHistory'
+        referenceHistory:
+          $ref: '#/components/schemas/ReferenceHistory'
+        notesHistory:
+          $ref: '#/components/schemas/NotesHistory'
+    CorrespondenceHistory:
+      type: object
+      properties:
+        createTime:
+          type: string
+          example: 2019-10-18 14:30:20
+        fromMask:
+          type: string
+          example: John S
+        fromEmailId:
+          type: string
+          example: john.smith@gmail.com
+        toMailId:
+          type: string
+          example: jessica@gmail.com
+        subject:
+          type: string
+        body:
+          type: string
+    ReferenceHistory:
+      type: object
+      properties:
+        referenceName:
+          type: string
+          example: Seacost Bank
+        contactId:
+          type: string
+        createTime:
+          type: string
+          example: 2019-10-18 14:30:20
+        address:
+          $ref: '#/components/schemas/Address'
+    NotesHistory:
+      type: object
+      properties:
+        createTime:
+          type: string
+          example: 2019-10-18 14:30:20
+        createUser:
+          type: string
+          example: Jessica M
+        notes:
+          type: string
+    SummaryView:
+      type: object
+      properties:
+        title:
+          type: string
+        customerName:
+          type: string
+        status:
+          type: string
+        statusDescription:
+          type: string
+        nextReviewDate:
+          type: object
+          description: date will be sent from API
+        reviewSummary:
+          type: array
+          items:
+            $ref: '#/components/schemas/ReviewSummary'

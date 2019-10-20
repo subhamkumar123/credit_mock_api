@@ -1,0 +1,35 @@
+{
+    "title": "COMMUNICATION HISTORY",
+    "communicationHistoryItems": [
+        {
+            "historyType": "Automated Mail",
+            "correspondenceHistory": {
+                "createTime": "2019-10-18 14:30:20",
+                "fromMask": "John S",
+                "fromEmailId": "john.smith@gmail.com",
+                "toMailId": "jessica@gmail.com",
+                "subject": "subject of email",
+                "body": "body of email"
+            }
+        },
+        {
+            "historyType": "Bank Reference",
+            "referenceHistory": {
+                "referenceName": "Seacost Bank",
+                "contactId": "Hello123",
+                "createTime": "2019-10-18 14:30:20",
+                "address": {
+                    "addressLine1": "DLF gate 1",
+                    "addressLine2": "DLF gate 2",
+                    "street": " Gachibowli",
+                    "city": "Hyderabad",
+                    "state": "Telangana",
+                    "country": "India",
+                    "zip": "12345",
+                    "phoneNumber": "1234561234",
+                    "emailId": "abc.ds@highradius.com"
+                }
+            }   
+        }
+    ]
+}

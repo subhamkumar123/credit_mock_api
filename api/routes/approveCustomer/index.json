@@ -1,0 +1,14 @@
+{
+    "title": "Hello",
+    "customerName": "Lorem",
+    "status": "",
+    "statusDescription": "good",
+    "nextReviewDate": "2019-08-09 07:50:49",
+    "reviewSummary": [
+        {
+            "actionPerformed": "Assigned credit limit of 1000",
+            "summaryType": "CORRESPONDENCE",
+            "createDate": "2019-08-01 07:50:49"
+        }
+    ]
+}

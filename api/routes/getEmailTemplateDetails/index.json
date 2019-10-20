@@ -1,0 +1,11 @@
+{
+    "toEmailId": "jessica.jones@highradius.com",
+    "toEmailName": "Jessica Jones",
+    "subject": "subject of the email",
+    "body": "Body of the email. Template will not have parsed values.",
+    "corrHeaderId": 0,
+    "corrTypeId": 0,
+    "emailTemplateId": 0,
+    "replyTo": 0,
+    "senderEmail": 0
+}
