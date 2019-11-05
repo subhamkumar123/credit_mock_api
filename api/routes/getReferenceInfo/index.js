@@ -9,7 +9,7 @@ router.post("/", multer.none(), (req, res) => {
     const returnData = data.find(customerData => {
         if (
             requestData.customerId === customerData.customerId &&
-            requestData.requestId === customerData.requestId &&
+            requestData.requestId === customerData.creditRequestId &&
             requestData.referenceType === customerData.referenceType
         ) {
             return customerData;
