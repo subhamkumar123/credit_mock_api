@@ -2,6 +2,7 @@
     {
         "customerId": 0,
         "creditRequestId": 1001,
+        "referenceType": "BANK",
         "title": "Bank",
         "referenceDetails": [
             {
@@ -42,6 +43,7 @@
     {
         "customerId": 1,
         "creditRequestId": 1002,
+        "referenceType": "BANK",
         "title": "Bank",
         "referenceDetails": [
             {
@@ -82,6 +84,7 @@
     {
         "customerId": 2,
         "creditRequestId": 1003,
+        "referenceType": "BANK",
         "title": "Bank",
         "referenceDetails": [
             {
@@ -122,7 +125,7 @@
     {
         "customerId": 3,
         "creditRequestId": 1004,
-        "referenceType": "Bank",
+        "referenceType": "BANK",
         "title": "Bank",
         "referenceDetails": [
             {
@@ -163,7 +166,7 @@
     {
         "customerId": 4,
         "creditRequestId": 1005,
-        "referenceType": "Trade",
+        "referenceType": "TRADE",
         "title": "Trade",
         "referenceDetails": [
             {
@@ -204,7 +207,7 @@
     {
         "customerId": 5,
         "creditRequestId": 1006,
-        "referenceType": "Trade",
+        "referenceType": "TRADE",
         "title": "Trade",
         "referenceDetails": [
             {
@@ -245,7 +248,7 @@
     {
         "customerId": 6,
         "creditRequestId": 1007,
-        "referenceType": "Bank",
+        "referenceType": "BANK",
         "title": "Bank",
         "referenceDetails": [
             {
