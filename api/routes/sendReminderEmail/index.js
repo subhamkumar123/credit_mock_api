@@ -1,10 +1,20 @@
-const express = require('express');
-const data = require('./index.json');
+const express = require("express");
+const data = require("./index.json");
 
 const router = express.Router();
+const multer = require("multer")();
 
-router.post('/', (req, res) => {
-  res.send(data);
+router.post("/", multer.none(), (req, res) => {
+    const requestData = JSON.parse(req.body.data);
+    const returnData = data.find(customerData => {
+        if (
+            requestData.requestId === customerData.creditRequestId &&
+            requestData.referenceType === customerData.referenceType
+        ) {
+            return customerData;
+        }
+    });
+    res.send(returnData);
 });
 
 module.exports = router;

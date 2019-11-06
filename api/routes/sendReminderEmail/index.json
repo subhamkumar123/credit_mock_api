@@ -1,38 +1,322 @@
-{
-  "title": "Bank",
-  "referenceDetails": [
+[
     {
-      "referenceName": "Bank Reference",
-      "isVerified": true,
-      "isReminderSent": true,
-      "address": [
-        {
-          "addressLine1": "DLF gate 1",
-          "addressLine2": "DLF gate 2",
-          "street": "Gachibowli",
-          "city": "Hyderabad",
-          "state": "Telangana",
-          "country": "India",
-          "zip": "12345",
-          "phoneNumber": "1234561234",
-          "emailId": "abc.ds@highradius.com"
-        }
-      ],
-      "summaryLog": [
-        {
-          "summaryType": "CORRESPONDENCE",
-          "summary": "abc",
-          "createUser": "Admin Lonza",
-          "createDate": "2017-07-31 03:00:00"
-        }
-      ],
-      "fields": [
-        {
-          "name": "Company Name",
-          "value": "HighRadius",
-          "type": "string"
-        }
-      ]
+        "creditRequestId": 1001,
+        "referenceType": "BANK",
+        "title": "Bank",
+        "referenceDetails": [
+            {
+                "referenceName": "Bank Reference",
+                "isVerified": true,
+                "isReminderSent": true,
+                "address": [
+                    {
+                        "addressLine1": "DLF gate 1",
+                        "addressLine2": "DLF gate 2",
+                        "street": "Gachibowli",
+                        "city": "Hyderabad",
+                        "state": "Telangana",
+                        "country": "India",
+                        "zip": "12345",
+                        "phoneNumber": "1234561234",
+                        "emailId": "abc.ds@highradius.com"
+                    }
+                ],
+                "summaryLog": [
+                    {
+                        "summaryType": "CORRESPONDENCE",
+                        "summary": "abc",
+                        "createUser": "Admin Lonza",
+                        "createDate": "2017-07-31 03:00:00"
+                    }
+                ],
+                "fields": [
+                    {
+                        "name": "Company Name",
+                        "value": "HighRadius",
+                        "type": "string"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "creditRequestId": 1001,
+        "referenceType": "TRADE",
+        "title": "Trade",
+        "referenceDetails": [
+            {
+                "referenceName": "Seacost National Bank",
+                "isVerified": true,
+                "isReminderSent": true,
+                "address": [
+                    {
+                        "addressLine1": "DLF gate 1",
+                        "addressLine2": "DLF gate 2",
+                        "street": "Gachibowli",
+                        "city": "Hyderabad",
+                        "state": "Telangana",
+                        "country": "India",
+                        "zip": "12345",
+                        "phoneNumber": "1234561234",
+                        "emailId": "abc.ds@highradius.com"
+                    }
+                ],
+                "summaryLog": [
+                    {
+                        "summaryType": "CORRESPONDENCE",
+                        "summary": "abc",
+                        "createUser": "Admin Lonza",
+                        "createDate": "2017-07-31 03:00:00"
+                    }
+                ],
+                "fields": [
+                    {
+                        "name": "Company Name",
+                        "value": "HighRadius",
+                        "type": "string"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "creditRequestId": 1002,
+        "referenceType": "BANK",
+        "title": "Bank",
+        "referenceDetails": [
+            {
+                "referenceName": "Bank Reference",
+                "isVerified": true,
+                "isReminderSent": true,
+                "address": [
+                    {
+                        "addressLine1": "DLF gate 1",
+                        "addressLine2": "DLF gate 2",
+                        "street": "Gachibowli",
+                        "city": "Hyderabad",
+                        "state": "Telangana",
+                        "country": "India",
+                        "zip": "12345",
+                        "phoneNumber": "1234561234",
+                        "emailId": "abc.ds@highradius.com"
+                    }
+                ],
+                "summaryLog": [
+                    {
+                        "summaryType": "CORRESPONDENCE",
+                        "summary": "abc",
+                        "createUser": "Admin Lonza",
+                        "createDate": "2017-07-31 03:00:00"
+                    }
+                ],
+                "fields": [
+                    {
+                        "name": "Company Name",
+                        "value": "HighRadius",
+                        "type": "string"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "creditRequestId": 1002,
+        "referenceType": "TRADE",
+        "title": "Trade",
+        "referenceDetails": [
+            {
+                "referenceName": "Bank Reference",
+                "isVerified": true,
+                "isReminderSent": true,
+                "address": [
+                    {
+                        "addressLine1": "DLF gate 1",
+                        "addressLine2": "DLF gate 2",
+                        "street": "Gachibowli",
+                        "city": "Hyderabad",
+                        "state": "Telangana",
+                        "country": "India",
+                        "zip": "12345",
+                        "phoneNumber": "1234561234",
+                        "emailId": "abc.ds@highradius.com"
+                    }
+                ],
+                "summaryLog": [
+                    {
+                        "summaryType": "CORRESPONDENCE",
+                        "summary": "abc",
+                        "createUser": "Admin Lonza",
+                        "createDate": "2017-07-31 03:00:00"
+                    }
+                ],
+                "fields": [
+                    {
+                        "name": "Company Name",
+                        "value": "HighRadius",
+                        "type": "string"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "creditRequestId": 1003,
+        "referenceType": "BANK",
+        "title": "Bank",
+        "referenceDetails": [
+            {
+                "referenceName": "Bank Reference",
+                "isVerified": true,
+                "isReminderSent": true,
+                "address": [
+                    {
+                        "addressLine1": "DLF gate 1",
+                        "addressLine2": "DLF gate 2",
+                        "street": "Gachibowli",
+                        "city": "Hyderabad",
+                        "state": "Telangana",
+                        "country": "India",
+                        "zip": "12345",
+                        "phoneNumber": "1234561234",
+                        "emailId": "abc.ds@highradius.com"
+                    }
+                ],
+                "summaryLog": [
+                    {
+                        "summaryType": "CORRESPONDENCE",
+                        "summary": "abc",
+                        "createUser": "Admin Lonza",
+                        "createDate": "2017-07-31 03:00:00"
+                    }
+                ],
+                "fields": [
+                    {
+                        "name": "Company Name",
+                        "value": "HighRadius",
+                        "type": "string"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "creditRequestId": 1003,
+        "referenceType": "TRADE",
+        "title": "Trade",
+        "referenceDetails": [
+            {
+                "referenceName": "ABC Bank",
+                "isVerified": true,
+                "isReminderSent": true,
+                "address": [
+                    {
+                        "addressLine1": "DLF gate 1",
+                        "addressLine2": "DLF gate 2",
+                        "street": "Gachibowli",
+                        "city": "Hyderabad",
+                        "state": "Telangana",
+                        "country": "India",
+                        "zip": "12345",
+                        "phoneNumber": "1234561234",
+                        "emailId": "abc.ds@highradius.com"
+                    }
+                ],
+                "summaryLog": [
+                    {
+                        "summaryType": "CORRESPONDENCE",
+                        "summary": "abc",
+                        "createUser": "Admin Lonza",
+                        "createDate": "2017-07-31 03:00:00"
+                    }
+                ],
+                "fields": [
+                    {
+                        "name": "Company Name",
+                        "value": "HighRadius",
+                        "type": "string"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "creditRequestId": 1004,
+        "referenceType": "BANK",
+        "title": "Bank",
+        "referenceDetails": [
+            {
+                "referenceName": "Bank Reference",
+                "isVerified": true,
+                "isReminderSent": true,
+                "address": [
+                    {
+                        "addressLine1": "DLF gate 1",
+                        "addressLine2": "DLF gate 2",
+                        "street": "Gachibowli",
+                        "city": "Hyderabad",
+                        "state": "Telangana",
+                        "country": "India",
+                        "zip": "12345",
+                        "phoneNumber": "1234561234",
+                        "emailId": "abc.ds@highradius.com"
+                    }
+                ],
+                "summaryLog": [
+                    {
+                        "summaryType": "CORRESPONDENCE",
+                        "summary": "abc",
+                        "createUser": "Admin Lonza",
+                        "createDate": "2017-07-31 03:00:00"
+                    }
+                ],
+                "fields": [
+                    {
+                        "name": "Company Name",
+                        "value": "HighRadius",
+                        "type": "string"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "creditRequestId": 1004,
+        "referenceType": "TRADE",
+        "title": "Trade",
+        "referenceDetails": [
+            {
+                "referenceName": "Trade Reference",
+                "isVerified": true,
+                "isReminderSent": true,
+                "address": [
+                    {
+                        "addressLine1": "DLF gate 1",
+                        "addressLine2": "DLF gate 2",
+                        "street": "Gachibowli",
+                        "city": "Hyderabad",
+                        "state": "Telangana",
+                        "country": "India",
+                        "zip": "12345",
+                        "phoneNumber": "1234561234",
+                        "emailId": "abc.ds@highradius.com"
+                    }
+                ],
+                "summaryLog": [
+                    {
+                        "summaryType": "CORRESPONDENCE",
+                        "summary": "abc",
+                        "createUser": "Admin Lonza",
+                        "createDate": "2017-07-31 03:00:00"
+                    }
+                ],
+                "fields": [
+                    {
+                        "name": "Company Name",
+                        "value": "HighRadius",
+                        "type": "string"
+                    }
+                ]
+            }
+        ]
     }
-  ]
-}
+]

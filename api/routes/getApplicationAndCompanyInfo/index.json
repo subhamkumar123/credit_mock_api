@@ -11,6 +11,11 @@
                     "name": "company type",
                     "type": "string",
                     "value": "string"
+                },
+                {
+                    "name": "In Business",
+                    "type": "String",
+                    "value": 4
                 }
             ],
             "references": [
@@ -59,6 +64,11 @@
                     "name": "company type",
                     "type": "string",
                     "value": "string"
+                },
+                {
+                    "name": "In Business",
+                    "type": "String",
+                    "value": 4
                 }
             ],
             "references": [
@@ -66,6 +76,11 @@
                     "availableRefIds": [1, 2],
                     "awaitedRefIds": [1],
                     "referenceType": "BANK"
+                },
+                {
+                    "availableRefIds": [1],
+                    "awaitedRefIds": [1, 2, 3],
+                    "referenceType": "TRADE"
                 }
             ]
         },
@@ -89,7 +104,7 @@
                 {
                     "availableRefIds": [1, 2],
                     "awaitedRefIds": [1],
-                    "referenceType": "BANK"
+                    "referenceType": "TRADE"
                 }
             ]
         },
@@ -111,9 +126,14 @@
             ],
             "references": [
                 {
-                    "availableRefIds": [1, 2],
-                    "awaitedRefIds": [1],
+                    "availableRefIds": [],
+                    "awaitedRefIds": [1, 2],
                     "referenceType": "BANK"
+                },
+                {
+                    "availableRefIds": [1, 2, 3],
+                    "awaitedRefIds": [],
+                    "referenceType": "TRADE"
                 }
             ]
         },
@@ -131,15 +151,14 @@
                     "name": "company type",
                     "type": "string",
                     "value": "string"
+                },
+                {
+                    "name": "designation",
+                    "type": "string",
+                    "value": "check"
                 }
             ],
-            "references": [
-                {
-                    "availableRefIds": [1, 2],
-                    "awaitedRefIds": [1],
-                    "referenceType": "BANK"
-                }
-            ]
+            "references": []
         },
         "receivedApplication": "2 Days Ago"
     },
