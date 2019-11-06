@@ -1,7 +1,7 @@
 [
     {
-        "creditRequestId": 1001,
-        "referenceType": "BANK",
+        "customerId": 0,
+        "actionName": "Ask for reference",
         "toEmailId": "jessica.jones@highradius.com",
         "toEmailName": "Jessica Jones",
         "subject": "subject of the email",
@@ -13,8 +13,8 @@
         "senderEmail": 0
     },
     {
-        "creditRequestId": 1001,
-        "referenceType": "TRADE",
+        "customerId": 0,
+        "actionName": "Get new reference",
         "toEmailId": "abc.def@highradius.com",
         "toEmailName": "Abc Def",
         "subject": "subject of the email",
@@ -26,8 +26,8 @@
         "senderEmail": 0
     },
     {
-        "creditRequestId": 1002,
-        "referenceType": "BANK",
+        "customerId": 1,
+        "actionName": "Ask for reference",
         "toEmailId": "john.doe@highradius.com",
         "toEmailName": "John Doe",
         "subject": "subject of the email",
@@ -39,8 +39,8 @@
         "senderEmail": 0
     },
     {
-        "creditRequestId": 1002,
-        "referenceType": "TRADE",
+        "customerId": 1,
+        "actionName": "Get new reference",
         "toEmailId": "jessica.jones@highradius.com",
         "toEmailName": "Jessica Jones",
         "subject": "subject of the email",
@@ -52,8 +52,8 @@
         "senderEmail": 0
     },
     {
-        "creditRequestId": 1003,
-        "referenceType": "BANK",
+        "customerId": 2,
+        "actionName": "Ask for reference",
         "toEmailId": "jessica.jones@highradius.com",
         "toEmailName": "Jessica Jones",
         "subject": "subject of the email",
@@ -65,8 +65,8 @@
         "senderEmail": 0
     },
     {
-        "creditRequestId": 1003,
-        "referenceType": "TRADE",
+        "customerId": 2,
+        "actionName": "Get new reference",
         "toEmailId": "jessica.jones@highradius.com",
         "toEmailName": "Jessica Jones",
         "subject": "subject of the email",
@@ -78,8 +78,8 @@
         "senderEmail": 0
     },
     {
-        "creditRequestId": 1004,
-        "referenceType": "BANK",
+        "customerId": 3,
+        "actionName": "Ask for reference",
         "toEmailId": "jessica.jones@highradius.com",
         "toEmailName": "Jessica Jones",
         "subject": "subject of the email",
@@ -91,8 +91,8 @@
         "senderEmail": 0
     },
     {
-        "creditRequestId": 1004,
-        "referenceType": "TRADE",
+        "customerId": 3,
+        "actionName": "Get new reference",
         "toEmailId": "jessica.jones@highradius.com",
         "toEmailName": "Jessica Jones",
         "subject": "subject of the email",
@@ -104,8 +104,8 @@
         "senderEmail": 0
     },
     {
-        "creditRequestId": 1005,
-        "referenceType": "BANK",
+        "customerId": 4,
+        "actionName": "Ask for reference",
         "toEmailId": "jessica.jones@highradius.com",
         "toEmailName": "Jessica Jones",
         "subject": "subject of the email",
@@ -117,8 +117,8 @@
         "senderEmail": 0
     },
     {
-        "creditRequestId": 1005,
-        "referenceType": "TRADE",
+        "customerId": 4,
+        "actionName": "Get new reference",
         "toEmailId": "jessica.jones@highradius.com",
         "toEmailName": "Jessica Jones",
         "subject": "subject of the email",

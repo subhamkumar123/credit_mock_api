@@ -8,8 +8,8 @@ router.post("/", multer.none(), (req, res) => {
     const requestData = JSON.parse(req.body.data);
     const returnData = data.find(customerData => {
         if (
-            requestData.requestId === customerData.creditRequestId &&
-            requestData.referenceType === customerData.referenceType
+            requestData.customerId === customerData.customerId &&
+            requestData.actionName === customerData.actionName
         ) {
             return customerData;
         }
