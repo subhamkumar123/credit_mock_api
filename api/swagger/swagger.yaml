@@ -473,8 +473,8 @@ components:
           type: string
           description: Reference type
           enum:
-          - Bank
-          - Trade
+          - BANK
+          - TRADE
         availableRefIds:
           type: array
           description: submitted reference details.
@@ -486,6 +486,16 @@ components:
             UI as Available else Pending
           items:
             description: list of awaited reference ids
+        isReminderSent:
+          type: boolean
+          description: If it is true, In UI it should come text reminder sent with
+            check sign
+          example: true
+        isReferenceSent:
+          type: boolean
+          description: If it is true, In UI it should come- Ref request sent with
+            check sign
+          example: true
     CustomerCreditScoreCardInfo:
       title: CREDIT SCORE
       type: object
@@ -882,7 +892,7 @@ components:
           description: recommended credit limit
           example: 1000
         notes:
-          type: integer
+          type: string
           description: approval notes
     CreditWorkboard_userInfo:
       type: object
@@ -973,7 +983,7 @@ components:
         referenceName:
           type: string
           description: Reference Name
-          example: Bank Reference
+          example: SeaCost National Bank
         isVerified:
           type: boolean
           description: Is Verified
@@ -1086,8 +1096,8 @@ components:
         referenceType:
           type: string
           enum:
-          - Bank
-          - Trade
+          - BANK
+          - TRADE
     AddCustomerNotesRequest:
       type: object
       properties:
@@ -1207,6 +1217,10 @@ components:
     CommunicationHistoryItem:
       type: object
       properties:
+        customerId:
+          type: integer
+        creditRequestId:
+          type: integer
         historyType:
           type: string
           enum:

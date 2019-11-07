@@ -22,7 +22,9 @@
                 {
                     "availableRefIds": [1, 2],
                     "awaitedRefIds": [1],
-                    "referenceType": "BANK"
+                    "referenceType": "BANK",
+                    "isReminderSent": true,
+                    "isReferenceSent": true
                 }
             ]
         },
@@ -46,7 +48,9 @@
                 {
                     "availableRefIds": [1, 2],
                     "awaitedRefIds": [1],
-                    "referenceType": "BANK"
+                    "referenceType": "BANK",
+                    "isReminderSent": true,
+                    "isReferenceSent": false
                 }
             ]
         },
@@ -75,12 +79,16 @@
                 {
                     "availableRefIds": [1, 2],
                     "awaitedRefIds": [1],
-                    "referenceType": "BANK"
+                    "referenceType": "BANK",
+                    "isReminderSent": true,
+                    "isReferenceSent": true
                 },
                 {
                     "availableRefIds": [1],
                     "awaitedRefIds": [1, 2, 3],
-                    "referenceType": "TRADE"
+                    "referenceType": "TRADE",
+                    "isReminderSent": true,
+                    "isReferenceSent": false
                 }
             ]
         },
@@ -104,7 +112,9 @@
                 {
                     "availableRefIds": [1, 2],
                     "awaitedRefIds": [1],
-                    "referenceType": "TRADE"
+                    "referenceType": "TRADE",
+                    "isReminderSent": true,
+                    "isReferenceSent": true
                 }
             ]
         },
@@ -128,12 +138,16 @@
                 {
                     "availableRefIds": [],
                     "awaitedRefIds": [1, 2],
-                    "referenceType": "BANK"
+                    "referenceType": "BANK",
+                    "isReminderSent": true,
+                    "isReferenceSent": false
                 },
                 {
                     "availableRefIds": [1, 2, 3],
                     "awaitedRefIds": [],
-                    "referenceType": "TRADE"
+                    "referenceType": "TRADE",
+                    "isReminderSent": true,
+                    "isReferenceSent": true
                 }
             ]
         },
@@ -180,7 +194,9 @@
                 {
                     "availableRefIds": [1, 2],
                     "awaitedRefIds": [1],
-                    "referenceType": "BANK"
+                    "referenceType": "BANK",
+                    "isReminderSent": true,
+                    "isReferenceSent": false
                 }
             ]
         },
