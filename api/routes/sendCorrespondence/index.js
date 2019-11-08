@@ -10,7 +10,6 @@ router.post("/", multer.none(), (req, res) => {
         if (
             requestData.customerId === customerData.customerId &&
             requestData.creditRequestId === customerData.creditRequestId &&
-            requestData.referenceType === customerData.referenceType &&
             requestData.toEmailId === customerData.toEmailId &&
             requestData.subject === customerData.subject &&
             requestData.body === customerData.body &&
