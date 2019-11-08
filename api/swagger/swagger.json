@@ -730,8 +730,8 @@
             "type": "string",
             "description": "Reference type",
             "enum": [
-              "Bank",
-              "Trade"
+              "BANK",
+              "TRADE"
             ]
           },
           "availableRefIds": {
@@ -747,6 +747,16 @@
             "items": {
               "description": "list of awaited reference ids"
             }
+          },
+          "isReminderSent": {
+            "type": "boolean",
+            "description": "If it is true, In UI it should come text reminder sent with check sign",
+            "example": true
+          },
+          "isReferenceSent": {
+            "type": "boolean",
+            "description": "If it is true, In UI it should come- Ref request sent with check sign",
+            "example": true
           }
         }
       },
@@ -1247,7 +1257,7 @@
             "example": 1000
           },
           "notes": {
-            "type": "integer",
+            "type": "string",
             "description": "approval notes"
           }
         }
@@ -1378,7 +1388,7 @@
           "referenceName": {
             "type": "string",
             "description": "Reference Name",
-            "example": "Bank Reference"
+            "example": "SeaCost National Bank"
           },
           "isVerified": {
             "type": "boolean",
@@ -1526,8 +1536,8 @@
           "referenceType": {
             "type": "string",
             "enum": [
-              "Bank",
-              "Trade"
+              "BANK",
+              "TRADE"
             ]
           }
         }
@@ -1707,6 +1717,12 @@
       "CommunicationHistoryItem": {
         "type": "object",
         "properties": {
+          "customerId": {
+            "type": "integer"
+          },
+          "creditRequestId": {
+            "type": "integer"
+          },
           "historyType": {
             "type": "string",
             "enum": [
