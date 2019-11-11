@@ -1,6 +1,7 @@
 [
     {
         "customerId": 0,
+        "requestId": 1001,
         "actionName": "Ask for reference",
         "toEmailId": "jessica.jones@highradius.com",
         "toEmailName": "Jessica Jones",
@@ -14,6 +15,7 @@
     },
     {
         "customerId": 0,
+        "requestId": 1001,
         "actionName": "Get new reference",
         "toEmailId": "abc.def@highradius.com",
         "toEmailName": "Abc Def",
@@ -27,6 +29,7 @@
     },
     {
         "customerId": 1,
+        "requestId": 1002,
         "actionName": "Ask for reference",
         "toEmailId": "john.doe@highradius.com",
         "toEmailName": "John Doe",
@@ -40,6 +43,7 @@
     },
     {
         "customerId": 1,
+        "requestId": 1002,
         "actionName": "Get new reference",
         "toEmailId": "jessica.jones@highradius.com",
         "toEmailName": "Jessica Jones",
@@ -53,6 +57,7 @@
     },
     {
         "customerId": 2,
+        "requestId": 1003,
         "actionName": "Ask for reference",
         "toEmailId": "jessica.jones@highradius.com",
         "toEmailName": "Jessica Jones",
@@ -66,6 +71,7 @@
     },
     {
         "customerId": 2,
+        "requestId": 1003,
         "actionName": "Get new reference",
         "toEmailId": "jessica.jones@highradius.com",
         "toEmailName": "Jessica Jones",
@@ -79,6 +85,7 @@
     },
     {
         "customerId": 3,
+        "requestId": 1004,
         "actionName": "Ask for reference",
         "toEmailId": "jessica.jones@highradius.com",
         "toEmailName": "Jessica Jones",
@@ -92,6 +99,7 @@
     },
     {
         "customerId": 3,
+        "requestId": 1004,
         "actionName": "Get new reference",
         "toEmailId": "jessica.jones@highradius.com",
         "toEmailName": "Jessica Jones",
@@ -105,6 +113,7 @@
     },
     {
         "customerId": 4,
+        "requestId": 1005,
         "actionName": "Ask for reference",
         "toEmailId": "jessica.jones@highradius.com",
         "toEmailName": "Jessica Jones",
@@ -118,6 +127,35 @@
     },
     {
         "customerId": 4,
+        "requestId": 1005,
+        "actionName": "Get new reference",
+        "toEmailId": "jessica.jones@highradius.com",
+        "toEmailName": "Jessica Jones",
+        "subject": "subject of the email",
+        "body": "Body of the email. Template will not have parsed values.",
+        "corrHeaderId": 0,
+        "corrTypeId": 0,
+        "emailTemplateId": 0,
+        "replyTo": 0,
+        "senderEmail": 0
+    },
+    {
+        "customerId": 6,
+        "requestId": 1007,
+        "actionName": "Ask for reference",
+        "toEmailId": "jessica.jones@highradius.com",
+        "toEmailName": "Jessica Jones",
+        "subject": "subject of the email",
+        "body": "Body of the email. Template will not have parsed values.",
+        "corrHeaderId": 0,
+        "corrTypeId": 0,
+        "emailTemplateId": 0,
+        "replyTo": 0,
+        "senderEmail": 0
+    },
+    {
+        "customerId": 6,
+        "requestId": 1007,
         "actionName": "Get new reference",
         "toEmailId": "jessica.jones@highradius.com",
         "toEmailName": "Jessica Jones",

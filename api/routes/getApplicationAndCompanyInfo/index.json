@@ -139,7 +139,7 @@
                     "availableRefIds": [],
                     "awaitedRefIds": [1, 2],
                     "referenceType": "BANK",
-                    "isReminderSent": true,
+                    "isReminderSent": false,
                     "isReferenceSent": false
                 },
                 {
@@ -192,10 +192,10 @@
             ],
             "references": [
                 {
-                    "availableRefIds": [1, 2],
-                    "awaitedRefIds": [1],
+                    "availableRefIds": [],
+                    "awaitedRefIds": [],
                     "referenceType": "BANK",
-                    "isReminderSent": true,
+                    "isReminderSent": false,
                     "isReferenceSent": false
                 }
             ]
