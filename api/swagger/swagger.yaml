@@ -1132,6 +1132,8 @@ components:
       properties:
         customerId:
           type: integer
+        requestId:
+          type: integer
         actionName:
           type: string
           enum:

@@ -91,3 +91,5 @@ typings/
 package-lock.json
 
 .vscode/
+
+/api/swagger/swagger.json
