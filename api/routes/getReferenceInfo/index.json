@@ -123,6 +123,47 @@
         ]
     },
     {
+        "customerId": 2,
+        "creditRequestId": 1003,
+        "referenceType": "TRADE",
+        "title": "Trade",
+        "referenceDetails": [
+            {
+                "referenceName": "Seacost National Bank",
+                "isVerified": true,
+                "isReminderSent": false,
+                "address": [
+                    {
+                        "addressLine1": "DLF gate 1",
+                        "addressLine2": "DLF gate 2",
+                        "street": "Gachibowli",
+                        "city": "Hyderabad",
+                        "state": "Telangana",
+                        "country": "India",
+                        "zip": "12345",
+                        "phoneNumber": "1234561234",
+                        "emailId": "abc.ds@highradius.com"
+                    }
+                ],
+                "summaryLog": [
+                    {
+                        "summaryType": "CORRESPONDENCE",
+                        "summary": "abc",
+                        "createUser": "Admin Lonza",
+                        "createDate": "2017-07-31 03:00:00"
+                    }
+                ],
+                "fields": [
+                    {
+                        "name": "Company Name",
+                        "value": "HighRadius",
+                        "type": "string"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "customerId": 3,
         "creditRequestId": 1004,
         "referenceType": "BANK",

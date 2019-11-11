@@ -17,6 +17,8 @@ const approveCustomer = require('./approveCustomer');
 const getCommunicationHistory = require('./getCommunicationHistory');
 const sendCorrespondence = require('./sendCorrespondence');
 const getEmailTemplateDetails = require('./getEmailTemplateDetails');
+const changeCreditLimit = require('./changeCreditLimit');
+const rejectCustomer = require('./rejectCustomer');
 
 const router = express.Router();
 
@@ -40,5 +42,7 @@ router.use('/approveCustomer.do', approveCustomer);
 router.use('/getCommunicationHistory.do', getCommunicationHistory);
 router.use('/sendCorrespondence.do', sendCorrespondence);
 router.use('/getEmailTemplateDetails.do', getEmailTemplateDetails);
+router.use('/changeCreditLimit.do', changeCreditLimit);
+router.use('/rejectCustomer.do', rejectCustomer);
 
 module.exports = router;
