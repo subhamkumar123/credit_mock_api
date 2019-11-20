@@ -9,9 +9,8 @@
                 "referenceName": "Bank Reference",
                 "isVerified": true,
                 "isReminderSent": true,
-                "address": [
-                    {
-                        "addressLine1": "DLF gate 1",
+                "address": {
+                    "addressLine1": "DLF gate 1",
                         "addressLine2": "DLF gate 2",
                         "street": "Gachibowli",
                         "city": "Hyderabad",
@@ -20,8 +19,7 @@
                         "zip": "12345",
                         "phoneNumber": "1234561234",
                         "emailId": "abc.ds@highradius.com"
-                    }
-                ],
+                },
                 "summaryLog": [
                     {
                         "summaryType": "CORRESPONDENCE",
@@ -50,19 +48,17 @@
                 "referenceName": "Bank Reference",
                 "isVerified": true,
                 "isReminderSent": true,
-                "address": [
-                    {
-                        "addressLine1": "DLF gate 1",
-                        "addressLine2": "DLF gate 2",
-                        "street": "Gachibowli",
-                        "city": "Hyderabad",
-                        "state": "Telangana",
-                        "country": "India",
-                        "zip": "12345",
-                        "phoneNumber": "1234561234",
-                        "emailId": "abc.ds@highradius.com"
-                    }
-                ],
+                "address": {
+                    "addressLine1": "DLF gate 1",
+                    "addressLine2": "DLF gate 2",
+                    "street": "Gachibowli",
+                    "city": "Hyderabad",
+                    "state": "Telangana",
+                    "country": "India",
+                    "zip": "12345",
+                    "phoneNumber": "1234561234",
+                    "emailId": "abc.ds@highradius.com"
+                },
                 "summaryLog": [
                     {
                         "summaryType": "CORRESPONDENCE",
@@ -91,19 +87,17 @@
                 "referenceName": "Bank Reference",
                 "isVerified": true,
                 "isReminderSent": true,
-                "address": [
-                    {
-                        "addressLine1": "DLF gate 1",
-                        "addressLine2": "DLF gate 2",
-                        "street": "Gachibowli",
-                        "city": "Hyderabad",
-                        "state": "Telangana",
-                        "country": "India",
-                        "zip": "12345",
-                        "phoneNumber": "1234561234",
-                        "emailId": "abc.ds@highradius.com"
-                    }
-                ],
+                "address": {
+                    "addressLine1": "DLF gate 1",
+                    "addressLine2": "DLF gate 2",
+                    "street": "Gachibowli",
+                    "city": "Hyderabad",
+                    "state": "Telangana",
+                    "country": "India",
+                    "zip": "12345",
+                    "phoneNumber": "1234561234",
+                    "emailId": "abc.ds@highradius.com"
+                },
                 "summaryLog": [
                     {
                         "summaryType": "CORRESPONDENCE",
@@ -132,19 +126,17 @@
                 "referenceName": "Seacost National Bank",
                 "isVerified": true,
                 "isReminderSent": false,
-                "address": [
-                    {
-                        "addressLine1": "DLF gate 1",
-                        "addressLine2": "DLF gate 2",
-                        "street": "Gachibowli",
-                        "city": "Hyderabad",
-                        "state": "Telangana",
-                        "country": "India",
-                        "zip": "12345",
-                        "phoneNumber": "1234561234",
-                        "emailId": "abc.ds@highradius.com"
-                    }
-                ],
+                "address": {
+                    "addressLine1": "DLF gate 1",
+                    "addressLine2": "DLF gate 2",
+                    "street": "Gachibowli",
+                    "city": "Hyderabad",
+                    "state": "Telangana",
+                    "country": "India",
+                    "zip": "12345",
+                    "phoneNumber": "1234561234",
+                    "emailId": "abc.ds@highradius.com"
+                },
                 "summaryLog": [
                     {
                         "summaryType": "CORRESPONDENCE",
@@ -173,19 +165,17 @@
                 "referenceName": "Bank Reference",
                 "isVerified": true,
                 "isReminderSent": true,
-                "address": [
-                    {
-                        "addressLine1": "DLF gate 1",
-                        "addressLine2": "DLF gate 2",
-                        "street": "Gachibowli",
-                        "city": "Hyderabad",
-                        "state": "Telangana",
-                        "country": "India",
-                        "zip": "12345",
-                        "phoneNumber": "1234561234",
-                        "emailId": "abc.ds@highradius.com"
-                    }
-                ],
+                "address": {
+                    "addressLine1": "DLF gate 1",
+                    "addressLine2": "DLF gate 2",
+                    "street": "Gachibowli",
+                    "city": "Hyderabad",
+                    "state": "Telangana",
+                    "country": "India",
+                    "zip": "12345",
+                    "phoneNumber": "1234561234",
+                    "emailId": "abc.ds@highradius.com"
+                },
                 "summaryLog": [
                     {
                         "summaryType": "CORRESPONDENCE",
@@ -214,19 +204,17 @@
                 "referenceName": "Bank Reference",
                 "isVerified": true,
                 "isReminderSent": true,
-                "address": [
-                    {
-                        "addressLine1": "DLF gate 1",
-                        "addressLine2": "DLF gate 2",
-                        "street": "Gachibowli",
-                        "city": "Hyderabad",
-                        "state": "Telangana",
-                        "country": "India",
-                        "zip": "12345",
-                        "phoneNumber": "1234561234",
-                        "emailId": "abc.ds@highradius.com"
-                    }
-                ],
+                "address": {
+                    "addressLine1": "DLF gate 1",
+                    "addressLine2": "DLF gate 2",
+                    "street": "Gachibowli",
+                    "city": "Hyderabad",
+                    "state": "Telangana",
+                    "country": "India",
+                    "zip": "12345",
+                    "phoneNumber": "1234561234",
+                    "emailId": "abc.ds@highradius.com"
+                },
                 "summaryLog": [
                     {
                         "summaryType": "CORRESPONDENCE",
@@ -255,19 +243,17 @@
                 "referenceName": "XYZ Bank",
                 "isVerified": true,
                 "isReminderSent": false,
-                "address": [
-                    {
-                        "addressLine1": "DLF gate 1",
-                        "addressLine2": "DLF gate 2",
-                        "street": "Gachibowli",
-                        "city": "Hyderabad",
-                        "state": "Telangana",
-                        "country": "India",
-                        "zip": "12345",
-                        "phoneNumber": "1234561234",
-                        "emailId": "abc.ds@highradius.com"
-                    }
-                ],
+                "address": {
+                    "addressLine1": "DLF gate 1",
+                    "addressLine2": "DLF gate 2",
+                    "street": "Gachibowli",
+                    "city": "Hyderabad",
+                    "state": "Telangana",
+                    "country": "India",
+                    "zip": "12345",
+                    "phoneNumber": "1234561234",
+                    "emailId": "abc.ds@highradius.com"
+                },
                 "summaryLog": [
                     {
                         "summaryType": "CORRESPONDENCE",
@@ -296,19 +282,17 @@
                 "referenceName": "ABC Bank",
                 "isVerified": false,
                 "isReminderSent": false,
-                "address": [
-                    {
-                        "addressLine1": "DLF gate 1",
-                        "addressLine2": "DLF gate 2",
-                        "street": "Gachibowli",
-                        "city": "Hyderabad",
-                        "state": "Telangana",
-                        "country": "India",
-                        "zip": "12345",
-                        "phoneNumber": "1234561234",
-                        "emailId": "abc.ds@highradius.com"
-                    }
-                ],
+                "address": {
+                    "addressLine1": "DLF gate 1",
+                    "addressLine2": "DLF gate 2",
+                    "street": "Gachibowli",
+                    "city": "Hyderabad",
+                    "state": "Telangana",
+                    "country": "India",
+                    "zip": "12345",
+                    "phoneNumber": "1234561234",
+                    "emailId": "abc.ds@highradius.com"
+                },
                 "summaryLog": [
                     {
                         "summaryType": "CORRESPONDENCE",

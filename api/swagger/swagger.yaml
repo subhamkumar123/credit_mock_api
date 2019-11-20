@@ -994,10 +994,8 @@ components:
             disabled)
           example: true
         address:
-          type: array
           description: Reference Address
-          items:
-            $ref: '#/components/schemas/Address'
+          $ref: '#/components/schemas/Address'
         summaryLog:
           type: array
           description: Summary Log
