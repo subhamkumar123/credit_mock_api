@@ -11,7 +11,8 @@
         "emailTemplateId": 0,
         "replyTo": 0,
         "senderEmail": 0,
-        "success": "true"
+        "success": "true",
+        "referenceType": "Bank"
     },
     {
         "customerId": 1,
@@ -25,7 +26,8 @@
         "emailTemplateId": 0,
         "replyTo": 0,
         "senderEmail": 0,
-        "success": "true"
+        "success": "true",
+        "referenceType": "Bank"
     },
     {
         "customerId": 2,
@@ -39,7 +41,8 @@
         "emailTemplateId": 0,
         "replyTo": 0,
         "senderEmail": 0,
-        "success": "true"
+        "success": "true",
+        "referenceType": "Bank"
     },
     {
         "customerId": 3,
@@ -53,7 +56,8 @@
         "emailTemplateId": 0,
         "replyTo": 0,
         "senderEmail": 0,
-        "success": "true"
+        "success": "true",
+        "referenceType": "Bank"
     },
     {
         "customerId": 4,
@@ -67,7 +71,8 @@
         "emailTemplateId": 0,
         "replyTo": 0,
         "senderEmail": 0,
-        "success": "true"
+        "success": "true",
+        "referenceType": "Trade"
     },
     {
         "customerId": 5,
@@ -81,7 +86,8 @@
         "emailTemplateId": 0,
         "replyTo": 0,
         "senderEmail": 0,
-        "success": "true"
+        "success": "true",
+        "referenceType": "Bank"
     },
     {
         "customerId": 6,
@@ -95,7 +101,8 @@
         "emailTemplateId": 0,
         "replyTo": 0,
         "senderEmail": 0,
-        "success": "true"
+        "success": "true",
+        "referenceType": "Trade"
     },
     {
         "customerId": 7,
@@ -109,6 +116,7 @@
         "emailTemplateId": 0,
         "replyTo": 0,
         "senderEmail": 0,
-        "success": "true"
+        "success": "true",
+        "referenceType": "Bank"
     }
 ]

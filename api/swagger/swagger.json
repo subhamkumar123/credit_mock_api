@@ -1401,11 +1401,8 @@
             "example": true
           },
           "address": {
-            "type": "array",
             "description": "Reference Address",
-            "items": {
-              "$ref": "#/components/schemas/Address"
-            }
+            "$ref": "#/components/schemas/Address"
           },
           "summaryLog": {
             "type": "array",
@@ -1592,6 +1589,16 @@
           "customerId": {
             "type": "integer"
           },
+          "creditRequestId": {
+            "type": "integer"
+          },
+          "referenceType": {
+            "type": "string",
+            "enum": [
+              "Bank",
+              "Trade"
+            ]
+          },
           "actionName": {
             "type": "string",
             "enum": [
@@ -1637,6 +1644,13 @@
           },
           "senderEmail": {
             "type": "integer"
+          },
+          "referenceType": {
+            "type": "string",
+            "enum": [
+              "Bank",
+              "Trade"
+            ]
           }
         }
       },
@@ -1672,6 +1686,13 @@
           },
           "senderEmail": {
             "type": "string"
+          },
+          "referenceType": {
+            "type": "string",
+            "enum": [
+              "Bank",
+              "Trade"
+            ]
           }
         }
       },

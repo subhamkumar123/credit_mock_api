@@ -17,7 +17,8 @@ router.post("/", multer.none(), (req, res) => {
             requestData.corrTypeId === customerData.corrTypeId &&
             requestData.emailTemplateId === customerData.emailTemplateId &&
             requestData.replyTo === customerData.replyTo &&
-            requestData.senderEmail === customerData.senderEmail
+            requestData.senderEmail === customerData.senderEmail &&
+            requestData.referenceType === customerData.referenceType
         ) {
             return customerData;
         }

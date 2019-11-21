@@ -1130,8 +1130,13 @@ components:
       properties:
         customerId:
           type: integer
-        requestId:
+        creditRequestId:
           type: integer
+        referenceType:
+          type: string
+          enum:
+          - Bank
+          - Trade
         actionName:
           type: string
           enum:
@@ -1165,6 +1170,11 @@ components:
           type: integer
         senderEmail:
           type: integer
+        referenceType:
+          type: string
+          enum:
+          - Bank
+          - Trade
     CorrespondenceRequest:
         type: object
         properties:
@@ -1188,6 +1198,11 @@ components:
             type: string
           senderEmail:
             type: string
+          referenceType:
+            type: string
+            enum:
+            - Bank
+            - Trade
     CorrespondenceDetails:
       type: object
       properties:
