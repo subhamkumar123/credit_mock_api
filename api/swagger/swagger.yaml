@@ -1056,6 +1056,7 @@ components:
           - PROCESSING
           - WORKFLOW
           - REFERENCE
+          - REMINDER_SENT
         summary:
           type: string
           description: Summary

@@ -4,21 +4,52 @@
         "creditRequestId": 1001,
         "referenceType": "BANK",
         "title": "Bank",
+        "isReminderSent": true,
+        "isReferenceSent": true,
         "referenceDetails": [
             {
                 "referenceName": "Bank Reference",
                 "isVerified": true,
-                "isReminderSent": true,
                 "address": {
                     "addressLine1": "DLF gate 1",
-                        "addressLine2": "DLF gate 2",
-                        "street": "Gachibowli",
-                        "city": "Hyderabad",
-                        "state": "Telangana",
-                        "country": "India",
-                        "zip": "12345",
-                        "phoneNumber": "1234561234",
-                        "emailId": "abc.ds@highradius.com"
+                    "addressLine2": "DLF gate 2",
+                    "street": "Gachibowli",
+                    "city": "Hyderabad",
+                    "state": "Telangana",
+                    "country": "India",
+                    "zip": "12345",
+                    "phoneNumber": "1234561234",
+                    "emailId": "abc.ds@highradius.com"
+                },
+                "summaryLog": [
+                    {
+                        "summaryType": "CORRESPONDENCE",
+                        "summary": "abc",
+                        "createUser": "Admin Lonza",
+                        "createDate": "2017-07-31 03:00:00"
+                    }
+                ],
+                "fields": [
+                    {
+                        "name": "Company Name",
+                        "value": "HighRadius",
+                        "type": "string"
+                    }
+                ]
+            },
+            {
+                "referenceName": "Bank Reference",
+                "isVerified": false,
+                "address": {
+                    "addressLine1": "DLF gate 1",
+                    "addressLine2": "DLF gate 2",
+                    "street": "Gachibowli",
+                    "city": "Hyderabad",
+                    "state": "Telangana",
+                    "country": "India",
+                    "zip": "12345",
+                    "phoneNumber": "1234561234",
+                    "emailId": "abc.ds@highradius.com"
                 },
                 "summaryLog": [
                     {
