@@ -1,0 +1,1860 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Credit Review",
+    "description": "Credit Cloud - Autonomous Receivables",
+    "contact": {
+      "name": "kavya.pingali"
+    },
+    "version": "4.0"
+  },
+  "servers": [
+    {
+      "url": "http://localhost:4000/crd"
+    }
+  ],
+  "paths": {
+    "/getCreditWorkboardSummary.do": {
+      "post": {
+        "operationId": "My Credit Workboard",
+        "responses": {
+          "200": {
+            "description": "Get My Credit Workboard data.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CreditWorkboard"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/getCustomersByStatus.do": {
+      "post": {
+        "operationId": "Customers by status",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomersByStatusRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Get customers by status.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CustomersByStatus"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/getApplicationAndCompanyInfo.do": {
+      "post": {
+        "operationId": "Customer details",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApplicationAndCompanyInfoRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Get application and company info.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ApplicationAndCompanyInfo"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/getCustomerCreditScoreInfo.do": {
+      "post": {
+        "operationId": "Customer score card details",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomerCreditScoreCardRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Get customer score card data.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CustomerCreditScoreCardInfo"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/getCustomerCreditReportMetrics.do": {
+      "post": {
+        "operationId": "credit report information",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomerCreditReportMetricsRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Get customer credit report metrics.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CustomerCreditReportMetrics"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/getCustomerFinancialMetrics.do": {
+      "post": {
+        "operationId": "financial report information",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomerFinancialMetricsRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Get customer financial report metrics.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CustomerFinancialMetrics"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/getCustomerInsights.do": {
+      "post": {
+        "operationId": "customer insights",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomerInsightsRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Get customer insights.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CustomerInsights"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/getCustomerReferenceInfo.do": {
+      "post": {
+        "operationId": "Bank and trade references",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CustomerReferenceRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Get customer reference information.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CustomerReferenceInfo"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/getAllCamNotesList.do": {
+      "post": {
+        "operationId": "View Notes",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/viewNotesRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Get customer reference information.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CustomerNotes"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/updateNextReviewDate.do": {
+      "post": {
+        "operationId": "Update next review date",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/NextReviewDateRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "update next review date",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NextReviewDate"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/sendReminderEmail.do": {
+      "post": {
+        "operationId": "Send Reminder Email",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SendReminderEmailRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "update next review date",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SendReminderEmail"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/getRejectReasons.do": {
+      "post": {
+        "operationId": "get reject reasons",
+        "responses": {
+          "200": {
+            "description": "get reject reasons",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/RejectReasons"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/addCustomerNotes.do": {
+      "post": {
+        "operationId": "Add Customer Notes",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AddCustomerNotesRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Add Customer Notes",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AddCustomerNotes"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/getReferenceInfo.do": {
+      "post": {
+        "operationId": "bank and trade ref drawer",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReferenceInfoRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "bank and trade ref drawer",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SendReminderEmail"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/getEmailTemplateDetails.do": {
+      "post": {
+        "operationId": "get email template details",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmailTemplateRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "bank and trade ref drawer",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/EmailTemplateDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/sendCorrespondence.do": {
+      "post": {
+        "operationId": "send correspondence",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CorrespondenceRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "bank and trade ref drawer",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CorrespondenceDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/getCommunicationHistory.do": {
+      "post": {
+        "operationId": "Communication History",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CommunicationHistoryRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "bank and trade ref drawer",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/CommunicationHistory"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/approveCustomer.do": {
+      "post": {
+        "operationId": "Approve Customer",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ApproveCustomerRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "bank and trade ref drawer",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SummaryView"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CreditWorkboard": {
+        "type": "object",
+        "properties": {
+          "readyToReviewApplications": {
+            "type": "integer",
+            "description": "To Review",
+            "example": 4
+          },
+          "pendingInformationApplications": {
+            "type": "integer",
+            "description": "Pending information",
+            "example": 0
+          },
+          "autoApprovedApplications": {
+            "type": "integer",
+            "description": "To Review",
+            "example": 0
+          },
+          "reviewedApplications": {
+            "type": "integer",
+            "description": "Count of applications reviewed today",
+            "nullable": true,
+            "example": 0
+          },
+          "userInfo": {
+            "$ref": "#/components/schemas/CreditWorkboard_userInfo"
+          }
+        }
+      },
+      "CustomersByStatus": {
+        "type": "object",
+        "properties": {
+          "requestStatus": {
+            "type": "string",
+            "description": "customer status",
+            "enum": [
+              "Ready to Review",
+              "Pending Information",
+              "Auto approved"
+            ]
+          },
+          "customerInfo": {
+            "type": "array",
+            "description": "customer details",
+            "items": {
+              "$ref": "#/components/schemas/CustomerInfo"
+            }
+          }
+        }
+      },
+      "CustomerInfo": {
+        "type": "object",
+        "properties": {
+          "customerName": {
+            "type": "string",
+            "description": "Customer name",
+            "example": "4"
+          },
+          "customerNumber": {
+            "type": "string",
+            "description": "Customer number",
+            "example": "HR87234"
+          },
+          "customerId": {
+            "type": "integer",
+            "description": "Internal customer unique id",
+            "example": 0
+          },
+          "requestId": {
+            "type": "integer",
+            "description": "Internal customer request unique id",
+            "example": 1001
+          },
+          "recommendedCreditLimit": {
+            "type": "array",
+            "description": "Credit limit recommended by system",
+            "items": {
+              "$ref": "#/components/schemas/Currency"
+            }
+          },
+          "approvedCreditLimit": {
+            "type": "array",
+            "description": "Credit limit approved",
+            "items": {
+              "$ref": "#/components/schemas/Currency"
+            }
+          },
+          "riskClass": {
+            "type": "array",
+            "description": "calculated risk class for customer",
+            "items": {
+              "$ref": "#/components/schemas/RiskClass"
+            }
+          },
+          "createdDate": {
+            "type": "string",
+            "example": "2019-04-12T00:00:00.000Z"
+          },
+          "timeLapsed": {
+            "type": "string",
+            "example": "toDay"
+          },
+          "applicationInfo": {
+            "type": "array",
+            "description": "application information",
+            "items": {
+              "$ref": "#/components/schemas/ApplicationInfo"
+            }
+          },
+          "references": {
+            "type": "array",
+            "description": "Bank and trade reference details",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/References"
+            }
+          }
+        }
+      },
+      "ApplicationInfo": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "custom field name",
+            "example": "company type"
+          },
+          "value": {
+            "type": "object",
+            "description": "custom field value",
+            "example": "public"
+          },
+          "type": {
+            "type": "string",
+            "description": "custom field value",
+            "example": "string"
+          }
+        }
+      },
+      "Currency": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string",
+            "description": "Currency symbol",
+            "example": "$"
+          },
+          "amountLabel": {
+            "type": "string",
+            "description": "Amount value with symbol",
+            "example": "$"
+          },
+          "amountValue": {
+            "type": "number",
+            "description": "Amount value",
+            "example": 1000
+          }
+        }
+      },
+      "RiskClass": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "description": "risk class label for display",
+            "example": "1000"
+          },
+          "category": {
+            "type": "string",
+            "description": "for colour coding",
+            "example": "HIGH",
+            "enum": [
+              "HIGH",
+              "LOW",
+              "MEDIUM"
+            ]
+          },
+          "priority": {
+            "type": "integer",
+            "description": "priority number for sorting",
+            "example": 1
+          }
+        }
+      },
+      "ApplicationAndCompanyInfo": {
+        "title": "APPLICATION INFO",
+        "type": "object",
+        "properties": {
+          "applicationFilePath": {
+            "type": "string",
+            "description": "Pdf file S3 path. If path is empty then navigation bar should be disabled on the UI",
+            "nullable": true,
+            "example": "/S3/..."
+          },
+          "receivedApplication": {
+            "type": "string",
+            "description": "received application date",
+            "example": "2 Days Ago"
+          },
+          "applicationType": {
+            "type": "string",
+            "description": "type of application",
+            "example": "New Application"
+          },
+          "applicationStatus": {
+            "type": "string",
+            "description": "application status",
+            "example": "Ready To Review"
+          },
+          "CompanyInfo": {
+            "type": "array",
+            "description": "company information",
+            "items": {
+              "$ref": "#/components/schemas/CompanyInfo"
+            }
+          }
+        }
+      },
+      "CompanyInfo": {
+        "title": "COMPANY INFO",
+        "type": "object",
+        "properties": {
+          "applicationIfo": {
+            "type": "array",
+            "description": "application information",
+            "items": {
+              "$ref": "#/components/schemas/ApplicationInfo"
+            }
+          },
+          "references": {
+            "type": "array",
+            "description": "Bank and trade reference details",
+            "nullable": true,
+            "items": {
+              "$ref": "#/components/schemas/References"
+            }
+          }
+        }
+      },
+      "References": {
+        "title": "{Reference Type} References",
+        "type": "object",
+        "properties": {
+          "referenceType": {
+            "type": "string",
+            "description": "Reference type",
+            "enum": [
+              "BANK",
+              "TRADE"
+            ]
+          },
+          "availableRefIds": {
+            "type": "array",
+            "description": "submitted reference details.",
+            "items": {
+              "description": "list of available reference ids"
+            }
+          },
+          "awaitedRefIds": {
+            "type": "array",
+            "description": "awaited reference details. If awaited is empty then mark the UI as Available else Pending",
+            "items": {
+              "description": "list of awaited reference ids"
+            }
+          },
+          "isReminderSent": {
+            "type": "boolean",
+            "description": "If it is true, In UI it should come text reminder sent with check sign",
+            "example": true
+          },
+          "isReferenceSent": {
+            "type": "boolean",
+            "description": "If it is true, In UI it should come- Ref request sent with check sign",
+            "example": true
+          }
+        }
+      },
+      "CustomerCreditScoreCardInfo": {
+        "title": "CREDIT SCORE",
+        "type": "object",
+        "properties": {
+          "creditScoreToolTip": {
+            "type": "string",
+            "description": "Detailed explanation about the credit score calculations",
+            "example": "A credit score is a measure of an individual’s ability to pay back the borrowed amount. It is the numerical representation of their creditworthiness. A credit score is a 3 digit number. You should always work towards reaching a credit score that is higher. A higher credit score offers you several benefits and helps you at the time of getting a loan or a credit card. Having a low credit score suggests you have not been a responsible borrower and have been slacking off repaying the borrowed sum. Credit scores are calculated by the credit bureaus in the country after taking into consideration several factors like the length of your credit history, repayment records, credit inquiries, among others."
+          },
+          "minCreditScore": {
+            "type": "integer",
+            "description": "Minimum credit score possible for an account",
+            "example": 0
+          },
+          "maxCreditScore": {
+            "type": "integer",
+            "description": "Maximum credit score possible for an account",
+            "example": 100
+          },
+          "creditScoreCutOff": {
+            "type": "integer",
+            "description": "Cut off value",
+            "example": 50
+          },
+          "creditScore": {
+            "type": "integer",
+            "description": "Credit score",
+            "example": 60
+          },
+          "riskClass": {
+            "type": "array",
+            "description": "calculated risk class for customer",
+            "items": {
+              "$ref": "#/components/schemas/RiskClass"
+            }
+          },
+          "scoreCardDetails": {
+            "type": "array",
+            "description": "detailed categorisation of each agency for scoring a customer",
+            "items": {
+              "$ref": "#/components/schemas/ScoreCardDetails"
+            }
+          }
+        }
+      },
+      "ScoreCardDetails": {
+        "type": "object",
+        "properties": {
+          "formulaName": {
+            "type": "string",
+            "description": "Name of the agency which contributes to the scoring of the customer",
+            "example": "D&B Global"
+          },
+          "weight": {
+            "type": "integer",
+            "description": "Weight of the agency in overall score calculation",
+            "example": 40
+          },
+          "output": {
+            "type": "integer",
+            "description": "Output value",
+            "example": 74
+          },
+          "outputCutOff": {
+            "type": "integer",
+            "description": "Output value",
+            "example": 35
+          }
+        }
+      },
+      "CustomerCreditReportMetrics": {
+        "title": "CREDIT REPORT METRICS",
+        "type": "object",
+        "properties": {
+          "creditReportToolTip": {
+            "type": "string",
+            "description": "Tool tip ",
+            "example": "A credit report is a detailed breakdown of an individual's credit history prepared by a credit bureau. Credit bureaus collect financial information about individuals and create credit reports based on that information, and lenders use the reports along with other details to determine loan applicants' creditworthiness."
+          },
+          "creditReportSummary": {
+            "type": "array",
+            "description": "Detailed credit report details",
+            "items": {
+              "$ref": "#/components/schemas/CreditReportSummary"
+            }
+          }
+        }
+      },
+      "CreditReportSummary": {
+        "type": "object",
+        "properties": {
+          "agencyName": {
+            "type": "string",
+            "description": "Name of the agency",
+            "example": "DNB Global"
+          },
+          "providerDataTypeId": {
+            "type": "integer",
+            "description": "Unique id to identify agency",
+            "example": 123
+          },
+          "agencyLogoPath": {
+            "type": "string",
+            "description": "Logo of the agency.",
+            "example": "yet to decide"
+          },
+          "reportFilePath": {
+            "type": "string",
+            "description": "S3 path of the file. If this field is empty, disable the navigation icon on UI",
+            "nullable": true,
+            "example": "/S3..."
+          },
+          "agencyField": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AgencyField"
+            }
+          }
+        }
+      },
+      "AgencyField": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Name of the field",
+            "example": "Paydex"
+          },
+          "fieldType": {
+            "type": "string",
+            "description": "Data type of the field",
+            "example": "string",
+            "enum": [
+              "string",
+              "number",
+              "amount"
+            ]
+          },
+          "value": {
+            "type": "string",
+            "description": "Value of the field",
+            "example": "30"
+          },
+          "minValue": {
+            "type": "integer",
+            "description": "Minimum value",
+            "example": 0
+          },
+          "maxValue": {
+            "type": "integer",
+            "description": "Maximum value",
+            "example": 100
+          },
+          "cutOff1Value": {
+            "type": "integer",
+            "description": "Cut off value",
+            "example": 60
+          },
+          "isAcceptable": {
+            "type": "string",
+            "description": "If the field type is String. Check for isAcceptable flag. If it is false, colour of the text should be Red",
+            "nullable": true,
+            "example": "for CC it is false",
+            "enum": [
+              "true",
+              "false"
+            ]
+          },
+          "possibleValues": {
+            "type": "string",
+            "description": "All possible values for string field type.",
+            "example": "AA - Highest Grade AB - Good Grade BB - Upper Medium Grade BC - Lower Medium Grade CC - Average Grade CD - Below Average Grade"
+          },
+          "comments": {
+            "type": "string",
+            "description": "Comments for fields",
+            "example": "8+ is good"
+          }
+        }
+      },
+      "CustomerFinancialMetrics": {
+        "title": "FINANCIALS",
+        "type": "object",
+        "properties": {
+          "financialsToolTip": {
+            "type": "string",
+            "description": "tool tip",
+            "example": "Financial statements (or financial reports) are formal records of the financial activities and position of a business, person, or other entity. Relevant financial information is presented in a structured manner and in a form which is easy to understand."
+          },
+          "agencyField": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/AgencyField"
+            }
+          }
+        },
+        "description": "Finacial report summary"
+      },
+      "CustomerInsights": {
+        "title": "INSIGHTS",
+        "type": "object",
+        "properties": {
+          "requestedCreditLimit": {
+            "type": "array",
+            "description": "credit limit requested by customer",
+            "items": {
+              "$ref": "#/components/schemas/Currency"
+            }
+          },
+          "recommendedCreditLimit": {
+            "type": "array",
+            "description": "recommended credit limit by system",
+            "items": {
+              "$ref": "#/components/schemas/Currency"
+            }
+          },
+          "insights": {
+            "type": "array",
+            "description": "detailed insight of the customer. View all button should be enabled only if the data is more than what is shown on the details screen",
+            "items": {
+              "type": "string",
+              "example": "It is advisable to get personal guarantee."
+            }
+          }
+        },
+        "description": "customer insights"
+      },
+      "CustomerReferenceInfo": {
+        "title": "Reference Type + REFERENCES",
+        "type": "object",
+        "properties": {
+          "referenceInfo": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ReferenceInfo"
+            }
+          }
+        }
+      },
+      "ReferenceInfo": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "name of the bank or trade reference",
+            "example": "Seacoast National Bank"
+          },
+          "addressLine1": {
+            "type": "string",
+            "description": "Address line 1. Don't show on UI if value is null or empty",
+            "nullable": true,
+            "example": "3001 PGA"
+          },
+          "addressLine2": {
+            "type": "string",
+            "description": "Address line 2. Don't show on UI if value is null or empty",
+            "nullable": true,
+            "example": "Palm beach gardens"
+          },
+          "city": {
+            "type": "string",
+            "description": "City. Don't show on UI if value is null or empty",
+            "nullable": true
+          },
+          "state": {
+            "type": "string",
+            "description": "State. Don't show on UI if value is null or empty",
+            "nullable": true,
+            "example": "Florida"
+          },
+          "country": {
+            "type": "string",
+            "description": "Country. Don't show on UI if value is null or empty",
+            "nullable": true
+          },
+          "zip": {
+            "type": "number",
+            "description": "Zip. Don't show on UI if value is null or empty",
+            "nullable": true,
+            "example": 33410
+          },
+          "email": {
+            "type": "string",
+            "description": "Email Id.Don't show on UI if value is null or empty",
+            "nullable": true,
+            "example": "kavya.pingali@seacost.com"
+          },
+          "phone": {
+            "type": "number",
+            "description": "phone number.Don't show on UI if value is null or empty",
+            "nullable": true
+          },
+          "mailAudit": {
+            "type": "array",
+            "description": "Mail audit will be shown only when references are not available for the customer",
+            "items": {
+              "$ref": "#/components/schemas/MailAudit"
+            }
+          }
+        }
+      },
+      "MailAudit": {
+        "type": "object",
+        "properties": {
+          "auditData": {
+            "type": "string",
+            "description": "Mail audit comments",
+            "example": "Automated mail sent"
+          },
+          "date": {
+            "type": "string",
+            "description": "audit date",
+            "example": "2019-05-12T00:00:00.000Z"
+          }
+        }
+      },
+      "ApproveCustomer": {
+        "title": "Review Summary",
+        "type": "object",
+        "properties": {
+          "customerName": {
+            "type": "string",
+            "description": "Name of the customer",
+            "example": "Adidas Corporate"
+          },
+          "status": {
+            "type": "string",
+            "description": "status of customer approval",
+            "example": "SUCCESS"
+          },
+          "statusDescription": {
+            "type": "string",
+            "description": "description of customer approval",
+            "example": "Approved Successfully"
+          },
+          "nextReviewDate": {
+            "type": "string",
+            "description": "next review date of customer",
+            "example": "2019-08-01T07:50:49.000Z"
+          },
+          "reviewSummary": {
+            "type": "array",
+            "description": "List of actions performed",
+            "items": {
+              "$ref": "#/components/schemas/ReviewSummary"
+            }
+          }
+        }
+      },
+      "ReviewSummary": {
+        "type": "object",
+        "properties": {
+          "actionPerformed": {
+            "type": "string",
+            "example": "Assigned credit limit of 1000"
+          },
+          "summaryType": {
+            "type": "string",
+            "example": "CORRESPONDENCE",
+            "enum": [
+              "CORRESPONDENCE",
+              "PROCESSING",
+              "WORKFLOW"
+            ]
+          },
+          "createDate": {
+            "type": "string",
+            "example": "2019-08-01T07:50:49.000Z"
+          }
+        }
+      },
+      "CustomersByStatusRequest": {
+        "type": "object",
+        "properties": {
+          "status": {
+            "type": "string",
+            "description": "status of the application",
+            "enum": [
+              "Ready to Review",
+              "Pending Information",
+              "Auto approved"
+            ]
+          }
+        }
+      },
+      "ApplicationAndCompanyInfoRequest": {
+        "type": "object",
+        "properties": {
+          "requestId": {
+            "type": "integer",
+            "description": "unique request id",
+            "example": 1234
+          },
+          "customerId": {
+            "type": "integer",
+            "description": "unique customer id",
+            "example": 12345
+          }
+        }
+      },
+      "CustomerCreditScoreCardRequest": {
+        "type": "object",
+        "properties": {
+          "customerId": {
+            "type": "integer",
+            "description": "unique customer id",
+            "example": 12345
+          }
+        }
+      },
+      "CustomerCreditReportMetricsRequest": {
+        "type": "object",
+        "properties": {
+          "customerId": {
+            "type": "integer",
+            "description": "unique customer id",
+            "example": 12345
+          }
+        }
+      },
+      "CustomerFinancialMetricsRequest": {
+        "type": "object",
+        "properties": {
+          "customerId": {
+            "type": "integer",
+            "description": "unique customer id",
+            "example": 12345
+          }
+        }
+      },
+      "CustomerInsightsRequest": {
+        "type": "object",
+        "properties": {
+          "customerId": {
+            "type": "integer",
+            "description": "unique customer id",
+            "example": 12345
+          }
+        }
+      },
+      "CustomerReferenceRequest": {
+        "type": "object",
+        "properties": {
+          "customerId": {
+            "type": "integer",
+            "description": "unique customer id",
+            "example": 12345
+          },
+          "requestId": {
+            "type": "integer",
+            "description": "unique request id",
+            "example": 1234
+          },
+          "referenceType": {
+            "type": "string",
+            "description": "Depending upon the selection, reference type will be either bank or trade",
+            "example": "BANK",
+            "enum": [
+              "BANK",
+              "TRADE"
+            ]
+          },
+          "availableRefIds": {
+            "type": "array",
+            "description": "submitted reference details.",
+            "items": {
+              "description": "list of available reference ids"
+            }
+          },
+          "awaitedRefIds": {
+            "type": "array",
+            "description": "awaited reference details",
+            "items": {
+              "description": "list of awaited reference ids"
+            }
+          }
+        }
+      },
+      "ApproveCustomerRequest": {
+        "type": "object",
+        "properties": {
+          "customerId": {
+            "type": "integer",
+            "description": "unique customer id",
+            "example": 12345
+          },
+          "requestId": {
+            "type": "integer",
+            "description": "request id",
+            "example": 1234
+          },
+          "creditLimitRecommended": {
+            "type": "integer",
+            "description": "recommended credit limit",
+            "example": 1000
+          },
+          "notes": {
+            "type": "string",
+            "description": "approval notes"
+          }
+        }
+      },
+      "CreditWorkboard_userInfo": {
+        "type": "object",
+        "properties": {
+          "userName": {
+            "type": "string",
+            "example": "John"
+          },
+          "userId": {
+            "type": "integer",
+            "example": 1
+          }
+        },
+        "description": "User info  to be shown on side bar"
+      },
+      "viewNotesRequest": {
+        "type": "object",
+        "properties": {
+          "selValue": {
+            "type": "string",
+            "description": "category of notes to be displayed. From tovo value will always be 'All Notes'",
+            "example": "All Notes"
+          },
+          "fkCustomerMapId": {
+            "type": "integer",
+            "description": "customer id",
+            "example": 1234
+          },
+          "creditRequestId": {
+            "type": "integer",
+            "description": "unique request id",
+            "example": 12345
+          }
+        }
+      },
+      "NextReviewDateRequest": {
+        "type": "object",
+        "properties": {
+          "nextReviewDate": {
+            "type": "string"
+          },
+          "customerMapId": {
+            "type": "integer"
+          }
+        }
+      },
+      "NextReviewDate": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "example": true
+          },
+          "msg": {
+            "type": "string",
+            "example": "Updated Next Review Date Successfully"
+          }
+        }
+      },
+      "CustomerNotes": {
+        "type": "object",
+        "properties": {
+          "notes": {
+            "type": "string",
+            "description": "Notes content",
+            "example": "Credit Ratings from DNBGLOBAL retrieved for customer"
+          },
+          "createUser": {
+            "type": "string",
+            "description": "create user",
+            "example": "John Smith"
+          },
+          "createTime": {
+            "type": "string",
+            "description": "notes creation time in format YYYY-MM-dd HH:mm:ss",
+            "example": "2017-07-31T12:19:50.000Z"
+          }
+        }
+      },
+      "RejectReasons": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "example": "Reject Reasons"
+          },
+          "message": {
+            "type": "string",
+            "example": "Select your reason for rejection"
+          },
+          "rejectReasons": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "example": [
+              "Not a legitimate business",
+              "Insufficient data",
+              "Already filed for Bankruptcy",
+              "Customer has not provided adequate credit info"
+            ]
+          }
+        }
+      },
+      "SendReminderEmail": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "Title",
+            "example": "Bank"
+          },
+          "referenceDetails": {
+            "type": "array",
+            "description": "Reference Details",
+            "items": {
+              "$ref": "#/components/schemas/ReferenceDetails"
+            }
+          }
+        }
+      },
+      "ReferenceDetails": {
+        "type": "object",
+        "properties": {
+          "referenceName": {
+            "type": "string",
+            "description": "Reference Name",
+            "example": "SeaCost National Bank"
+          },
+          "isVerified": {
+            "type": "boolean",
+            "description": "Is Verified",
+            "example": true
+          },
+          "isReminderSent": {
+            "type": "boolean",
+            "description": "Is Reminder Sent (If it is true, sendReminder button will be disabled)",
+            "example": true
+          },
+          "address": {
+            "description": "Reference Address",
+            "$ref": "#/components/schemas/Address"
+          },
+          "summaryLog": {
+            "type": "array",
+            "description": "Summary Log",
+            "items": {
+              "$ref": "#/components/schemas/SummaryLog"
+            }
+          },
+          "fields": {
+            "type": "array",
+            "description": "Fields",
+            "items": {
+              "$ref": "#/components/schemas/Fields"
+            }
+          }
+        }
+      },
+      "Address": {
+        "type": "object",
+        "properties": {
+          "addressLine1": {
+            "type": "string",
+            "description": "Address Line1",
+            "example": "DLF gate 1"
+          },
+          "addressLine2": {
+            "type": "string",
+            "description": "Address Line2",
+            "example": "DLF gate 2"
+          },
+          "street": {
+            "type": "string",
+            "description": "Street",
+            "example": "Gachibowli"
+          },
+          "city": {
+            "type": "string",
+            "description": "City",
+            "example": "Hyderabad"
+          },
+          "state": {
+            "type": "string",
+            "description": "State",
+            "example": "Telangana"
+          },
+          "country": {
+            "type": "string",
+            "description": "Country",
+            "example": "India"
+          },
+          "zip": {
+            "type": "string",
+            "description": "Zip",
+            "example": "12345"
+          },
+          "phoneNumber": {
+            "type": "string",
+            "description": "Phone Number",
+            "example": "1234561234"
+          },
+          "emailId": {
+            "type": "string",
+            "description": "Email Id",
+            "example": "abc.ds@highradius.com"
+          }
+        }
+      },
+      "SummaryLog": {
+        "type": "object",
+        "properties": {
+          "summaryType": {
+            "type": "string",
+            "description": "Summary Type",
+            "enum": [
+              "CORRESPONDENCE",
+              "PROCESSING",
+              "WORKFLOW",
+              "REFERENCE",
+              "REMINDER_SENT"
+            ]
+          },
+          "summary": {
+            "type": "string",
+            "description": "Summary",
+            "example": "abc"
+          },
+          "createUser": {
+            "type": "string",
+            "description": "Create User",
+            "example": "Admin Lonza"
+          },
+          "createDate": {
+            "type": "string",
+            "description": "Create Date",
+            "example": "2017-07-31T03:00:00.000Z"
+          }
+        }
+      },
+      "Fields": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Field Name",
+            "example": "Company Name"
+          },
+          "value": {
+            "type": "object",
+            "description": "Field Value",
+            "example": "HighRadius"
+          },
+          "type": {
+            "type": "string",
+            "description": "Field Type",
+            "enum": [
+              "string",
+              "number",
+              "amount"
+            ]
+          }
+        }
+      },
+      "SendReminderEmailRequest": {
+        "type": "object",
+        "properties": {
+          "creditRequestId": {
+            "type": "integer"
+          },
+          "referenceType": {
+            "type": "string",
+            "enum": [
+              "BANK",
+              "TRADE"
+            ]
+          }
+        }
+      },
+      "AddCustomerNotesRequest": {
+        "type": "object",
+        "properties": {
+          "fkCustomerMapId": {
+            "type": "integer"
+          },
+          "pkCamMapCreditRequestId": {
+            "type": "integer"
+          },
+          "notes": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "string"
+          }
+        }
+      },
+      "AddCustomerNotes": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "example": true
+          },
+          "msg": {
+            "type": "string",
+            "example": "Successfully Added Notes"
+          }
+        }
+      },
+      "ReferenceInfoRequest": {
+        "type": "object",
+        "properties": {
+          "creditRequestId": {
+            "type": "integer"
+          },
+          "referenceType": {
+            "type": "string"
+          },
+          "customerId": {
+            "type": "string"
+          }
+        }
+      },
+      "EmailTemplateRequest": {
+        "type": "object",
+        "properties": {
+          "customerId": {
+            "type": "integer"
+          },
+          "creditRequestId": {
+            "type": "integer"
+          },
+          "referenceType": {
+            "type": "string",
+            "enum": [
+              "Bank",
+              "Trade"
+            ]
+          },
+          "actionName": {
+            "type": "string",
+            "enum": [
+              "Ask for reference",
+              "Get new reference"
+            ]
+          }
+        }
+      },
+      "EmailTemplateDetails": {
+        "type": "object",
+        "properties": {
+          "toEmailId": {
+            "type": "string",
+            "example": "jessica.jones@highradius.com"
+          },
+          "toEmailName": {
+            "type": "string",
+            "example": "Jessica Jones"
+          },
+          "subject": {
+            "type": "string",
+            "example": "subject of the email"
+          },
+          "body": {
+            "type": "string",
+            "description": "Body of the email. Template will not have parsed values."
+          },
+          "corrHeaderId": {
+            "type": "integer",
+            "description": "Corr header is used for in house correspondence"
+          },
+          "corrTypeId": {
+            "type": "integer",
+            "description": "Corr type used for cac correspondence"
+          },
+          "emailTemplateId": {
+            "type": "integer",
+            "description": "Email template id used for cac correspondence"
+          },
+          "replyTo": {
+            "type": "integer"
+          },
+          "senderEmail": {
+            "type": "integer"
+          },
+          "referenceType": {
+            "type": "string",
+            "enum": [
+              "Bank",
+              "Trade"
+            ]
+          }
+        }
+      },
+      "CorrespondenceRequest": {
+        "type": "object",
+        "properties": {
+          "customerId": {
+            "type": "integer"
+          },
+          "creditRequestId": {
+            "type": "integer"
+          },
+          "toEmailId": {
+            "type": "string"
+          },
+          "subject": {
+            "type": "string"
+          },
+          "body": {
+            "type": "string"
+          },
+          "corrHeaderId": {
+            "type": "integer"
+          },
+          "corrTypeId": {
+            "type": "integer"
+          },
+          "emailTemplateId": {
+            "type": "integer"
+          },
+          "replyTo": {
+            "type": "string"
+          },
+          "senderEmail": {
+            "type": "string"
+          },
+          "referenceType": {
+            "type": "string",
+            "enum": [
+              "Bank",
+              "Trade"
+            ]
+          }
+        }
+      },
+      "CorrespondenceDetails": {
+        "type": "object",
+        "properties": {
+          "success": {
+            "type": "boolean",
+            "example": true,
+            "enum": [
+              true,
+              false
+            ]
+          }
+        }
+      },
+      "CommunicationHistoryRequest": {
+        "type": "object",
+        "properties": {
+          "customerId": {
+            "type": "integer"
+          },
+          "creditRequestId": {
+            "type": "integer"
+          }
+        }
+      },
+      "CommunicationHistory": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "example": "COMMUNICATION HISTORY"
+          },
+          "communicationHistoryItems": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CommunicationHistoryItem"
+            }
+          }
+        }
+      },
+      "CommunicationHistoryItem": {
+        "type": "object",
+        "properties": {
+          "customerId": {
+            "type": "integer"
+          },
+          "creditRequestId": {
+            "type": "integer"
+          },
+          "historyType": {
+            "type": "string",
+            "enum": [
+              "Automated Mail",
+              "Custom Mail",
+              "Bank Reference",
+              "Trade Reference",
+              "Note"
+            ]
+          },
+          "correspondenceHistory": {
+            "$ref": "#/components/schemas/CorrespondenceHistory"
+          },
+          "referenceHistory": {
+            "$ref": "#/components/schemas/ReferenceHistory"
+          },
+          "notesHistory": {
+            "$ref": "#/components/schemas/NotesHistory"
+          }
+        }
+      },
+      "CorrespondenceHistory": {
+        "type": "object",
+        "properties": {
+          "createTime": {
+            "type": "string",
+            "example": "2019-10-18T14:30:20.000Z"
+          },
+          "fromMask": {
+            "type": "string",
+            "example": "John S"
+          },
+          "fromEmailId": {
+            "type": "string",
+            "example": "john.smith@gmail.com"
+          },
+          "toMailId": {
+            "type": "string",
+            "example": "jessica@gmail.com"
+          },
+          "subject": {
+            "type": "string"
+          },
+          "body": {
+            "type": "string"
+          }
+        }
+      },
+      "ReferenceHistory": {
+        "type": "object",
+        "properties": {
+          "referenceName": {
+            "type": "string",
+            "example": "Seacost Bank"
+          },
+          "contactId": {
+            "type": "string"
+          },
+          "createTime": {
+            "type": "string",
+            "example": "2019-10-18T14:30:20.000Z"
+          },
+          "address": {
+            "$ref": "#/components/schemas/Address"
+          }
+        }
+      },
+      "NotesHistory": {
+        "type": "object",
+        "properties": {
+          "createTime": {
+            "type": "string",
+            "example": "2019-10-18T14:30:20.000Z"
+          },
+          "createUser": {
+            "type": "string",
+            "example": "Jessica M"
+          },
+          "notes": {
+            "type": "string"
+          }
+        }
+      },
+      "SummaryView": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "customerName": {
+            "type": "string"
+          },
+          "status": {
+            "type": "string"
+          },
+          "statusDescription": {
+            "type": "string"
+          },
+          "nextReviewDate": {
+            "type": "object",
+            "description": "date will be sent from API"
+          },
+          "reviewSummary": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ReviewSummary"
+            }
+          }
+        }
+      }
+    }
+  }
+}

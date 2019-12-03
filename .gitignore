@@ -89,5 +89,3 @@ typings/
 
 #package-lock
 package-lock.json
-
-api/swagger/swagger.json
