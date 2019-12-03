@@ -6,7 +6,7 @@ info:
     name: kavya.pingali
   version: "4.0"
 servers:
-- url: http://localhost:4000/dms
+- url: http://localhost:4000/crd
 paths:
   /getCreditWorkboardSummary.do:
     post:
