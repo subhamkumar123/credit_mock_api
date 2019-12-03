@@ -1480,7 +1480,8 @@
               "CORRESPONDENCE",
               "PROCESSING",
               "WORKFLOW",
-              "REFERENCE"
+              "REFERENCE",
+              "REMINDER_SENT"
             ]
           },
           "summary": {
