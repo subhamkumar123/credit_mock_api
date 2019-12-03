@@ -1,224 +1,238 @@
 {
-  "customerInfo": [
-    {
-      "applicationInfo": [
+    "customerInfo": [
         {
-          "name": "company type",
-          "value": "public"
-        }
-      ],
-      "bankReference": "Available",
-      "createdDate": "5/10/2019",
-      "customerId": 0,
-      "customerName": "Nike Inc.1",
-      "customerNumber": "ABC",
-      "requestId": 1001,
-      "recommendedCreditLimit": {
-        "amountLabel": "$2.1M",
-        "amountValue": 2100000,
-        "symbol": "$"
-      },
-      "timeLapsed": "Today",
-      "tradeReference": "Available",
-      "riskClass": {
-        "category": "HIGH",
-        "label": "HIGH RISk",
-        "priority": 1
-      }
-    },
-    {
-      "applicationInfo": [
-        {
-          "name": "company type",
-          "value": "public"
-        }
-      ],
-      "bankReference": "Available",
-      "createdDate": "6/10/2019",
-      "customerId": 1,
-      "customerName": "Adidas Inc",
-      "customerNumber": "PQR",
-      "requestId": 1002,
-      "timeLapsed": "Today",
-      "tradeReference": "Available",
-      "riskClass": {
-        "category": "MEDIUM",
-        "label": "MEDIUM RISk",
-        "priority": 2
-      }
-    },
-    {
-      "applicationInfo": [
-        {
-          "name": "company type",
-          "value": "public"
-        }
-      ],
-      "approvedCreditLimit": {
-        "amountLabel": "$ 2M",
-        "symbol": "$",
-        "amountValue": 2000000
-      },
-      "bankReference": "Available",
-      "createdDate": "7/10/2019",
-      "customerId": 2,
-      "customerName": "Asics Inc.",
-      "customerNumber": "XYZ",
-      "recommendedCreditLimit": {
-        "amountLabel": "$ 200M",
-        "amountValue": 20000000,
-        "symbol": "$"
-      },
-      "requestId": 1003,
-      "riskClass": {
-        "category": "LOW",
-        "label": "LOW RISk",
-        "priority": 3
-      },
-      "timeLapsed": "Today",
-      "tradeReference": "Available"
-    },
-    {
-      "applicationInfo": [
-        {
-          "name": "company Yype",
-          "value": "Public"
+            "applicationInfo": [
+                {
+                    "name": "company type",
+                    "value": "public"
+                }
+            ],
+            "references": [
+                {
+                    "availableRefIds": [],
+                    "awaitedRefIds": [1, 2],
+                    "referenceType": "BANK",
+                    "isReminderSent": false,
+                    "isReferenceSent": false
+                },
+                {
+                    "availableRefIds": [1, 2, 3],
+                    "awaitedRefIds": [],
+                    "referenceType": "TRADE",
+                    "isReminderSent": true,
+                    "isReferenceSent": true
+                }
+            ],
+            "createdDate": "5/10/2019",
+            "customerId": 0,
+            "customerName": "Nike Inc.1",
+            "customerNumber": "ABC",
+            "requestId": 1001,
+            "recommendedCreditLimit": {
+                "amountLabel": "$2.1M",
+                "amountValue": 2100000,
+                "symbol": "$"
+            },
+            "timeLapsed": "Today",
+            "riskClass": {
+                "category": "HIGH",
+                "label": "HIGH RISk",
+                "priority": 1
+            }
         },
         {
-          "name": "In Business",
-          "value": "1 Year"
+            "applicationInfo": [
+                {
+                    "name": "company type",
+                    "value": "public"
+                }
+            ],
+            "bankReference": "Available",
+            "createdDate": "6/10/2019",
+            "customerId": 1,
+            "customerName": "Adidas Inc",
+            "customerNumber": "PQR",
+            "requestId": 1002,
+            "timeLapsed": "Today",
+            "tradeReference": "Available",
+            "riskClass": {
+                "category": "MEDIUM",
+                "label": "MEDIUM RISk",
+                "priority": 2
+            }
+        },
+        {
+            "applicationInfo": [
+                {
+                    "name": "company type",
+                    "value": "public"
+                }
+            ],
+            "approvedCreditLimit": {
+                "amountLabel": "$ 2M",
+                "symbol": "$",
+                "amountValue": 2000000
+            },
+            "bankReference": "Available",
+            "createdDate": "7/10/2019",
+            "customerId": 2,
+            "customerName": "Asics Inc.",
+            "customerNumber": "XYZ",
+            "recommendedCreditLimit": {
+                "amountLabel": "$ 200M",
+                "amountValue": 20000000,
+                "symbol": "$"
+            },
+            "requestId": 1003,
+            "riskClass": {
+                "category": "LOW",
+                "label": "LOW RISk",
+                "priority": 3
+            },
+            "timeLapsed": "Today",
+            "tradeReference": "Available"
+        },
+        {
+            "applicationInfo": [
+                {
+                    "name": "company Yype",
+                    "value": "Public"
+                },
+                {
+                    "name": "In Business",
+                    "value": "1 Year"
+                }
+            ],
+            "approvedCreditLimit": {
+                "amountLabel": "$ 2M",
+                "symbol": "$",
+                "amountValue": 2000000
+            },
+            "bankReference": "Pending",
+            "createdDate": "8/10/2019",
+            "customerId": 3,
+            "customerName": "Asics Inc.",
+            "customerNumber": "MNP",
+            "recommendedCreditLimit": {
+                "amountLabel": "$ 200M",
+                "amountValue": 20000000,
+                "symbol": "$"
+            },
+            "requestId": 1004,
+            "riskClass": {
+                "category": "LOW",
+                "label": "LOW RISk",
+                "priority": 3
+            },
+            "timeLapsed": "Today",
+            "tradeReference": "Pending"
+        },
+        {
+            "applicationInfo": [
+                {
+                    "name": "company Yype",
+                    "value": "Public"
+                },
+                {
+                    "name": "In Business",
+                    "value": "1 Year"
+                }
+            ],
+            "approvedCreditLimit": {
+                "amountLabel": "$ 2M",
+                "symbol": "$",
+                "amountValue": 2000000
+            },
+            "bankReference": "Pending",
+            "createdDate": "9/10/2019",
+            "customerId": 4,
+            "customerName": "SWE Inc.",
+            "customerNumber": "SWE",
+            "recommendedCreditLimit": {
+                "amountLabel": "$ 100K",
+                "amountValue": 1000000,
+                "symbol": "$"
+            },
+            "requestId": 1005,
+            "timeLapsed": "Today"
+        },
+        {
+            "applicationInfo": [
+                {
+                    "name": "company Yype",
+                    "value": "Public"
+                },
+                {
+                    "name": "In Business",
+                    "value": "1 Year"
+                },
+                {
+                    "name": "Field1",
+                    "value": "Value1"
+                }
+            ],
+            "approvedCreditLimit": {
+                "amountLabel": "$ 2M",
+                "symbol": "$",
+                "amountValue": 2000000
+            },
+            "bankReference": "Pending",
+            "createdDate": "10/10/2019",
+            "customerId": 5,
+            "customerName": "United Heat and Power INC",
+            "customerNumber": "HR123242342",
+            "recommendedCreditLimit": {
+                "amountLabel": "$ 2M",
+                "amountValue": 2000000,
+                "symbol": "$"
+            },
+            "requestId": 1006,
+            "riskClass": {
+                "category": "LOW",
+                "label": "LOW RISk",
+                "priority": 3
+            },
+            "timeLapsed": "Today",
+            "tradeReference": "Pending"
+        },
+        {
+            "applicationInfo": [
+                {
+                    "name": "company Yype",
+                    "value": "Public"
+                },
+                {
+                    "name": "In Business",
+                    "value": "1 Year"
+                },
+                {
+                    "name": "Field1",
+                    "value": "Value1"
+                }
+            ],
+            "approvedCreditLimit": {
+                "amountLabel": "$ 2M",
+                "symbol": "$",
+                "amountValue": 2000000
+            },
+            "bankReference": "Pending",
+            "createdDate": "10/10/2019",
+            "customerId": 6,
+            "customerName": "United Heat and Power INC",
+            "customerNumber": "HR123242342",
+            "recommendedCreditLimit": {
+                "amountLabel": "$ 2M",
+                "amountValue": 2000000,
+                "symbol": "$"
+            },
+            "requestId": 1007,
+            "riskClass": {
+                "category": "LOW",
+                "label": "LOW RISk",
+                "priority": 3
+            },
+            "timeLapsed": "Today",
+            "tradeReference": "Pending"
         }
-      ],
-      "approvedCreditLimit": {
-        "amountLabel": "$ 2M",
-        "symbol": "$",
-        "amountValue": 2000000
-      },
-      "bankReference": "Pending",
-      "createdDate": "8/10/2019",
-      "customerId": 3,
-      "customerName": "Asics Inc.",
-      "customerNumber": "MNP",
-      "recommendedCreditLimit": {
-        "amountLabel": "$ 200M",
-        "amountValue": 20000000,
-        "symbol": "$"
-      },
-      "requestId": 1004,
-      "riskClass": {
-        "category": "LOW",
-        "label": "LOW RISk",
-        "priority": 3
-      },
-      "timeLapsed": "Today",
-      "tradeReference": "Pending"
-    },
-    {
-      "applicationInfo": [
-        {
-          "name": "company Yype",
-          "value": "Public"
-        },
-        {
-          "name": "In Business",
-          "value": "1 Year"
-        }
-      ],
-      "approvedCreditLimit": {
-        "amountLabel": "$ 2M",
-        "symbol": "$",
-        "amountValue": 2000000
-      },
-      "bankReference": "Pending",
-      "createdDate": "9/10/2019",
-      "customerId": 4,
-      "customerName": "SWE Inc.",
-      "customerNumber": "SWE",
-      "recommendedCreditLimit": {
-        "amountLabel": "$ 100K",
-        "amountValue": 1000000,
-        "symbol": "$"
-      },
-      "requestId": 1005,
-      "timeLapsed": "Today"
-    },
-    {
-      "applicationInfo": [
-        {
-          "name": "company Yype",
-          "value": "Public"
-        },
-        {
-          "name": "In Business",
-          "value": "1 Year"
-        },
-        {
-          "name": "Field1",
-          "value": "Value1"
-        }
-      ],
-      "approvedCreditLimit": {
-        "amountLabel": "$ 2M",
-        "symbol": "$",
-        "amountValue": 2000000
-      },
-      "bankReference": "Pending",
-      "createdDate": "10/10/2019",
-      "customerId": 5,
-      "customerName": "United Heat and Power INC",
-      "customerNumber": "HR123242342",
-      "recommendedCreditLimit": {
-        "amountLabel": "$ 2M",
-        "amountValue": 2000000,
-        "symbol": "$"
-      },
-      "requestId": 1006,
-      "riskClass": {
-        "category": "LOW",
-        "label": "LOW RISk",
-        "priority": 3
-      },
-      "timeLapsed": "Today",
-      "tradeReference": "Pending"
-    },
-    {
-      "applicationInfo": [
-        {
-          "name": "company Yype",
-          "value": "Public"
-        },
-        {
-          "name": "In Business",
-          "value": "1 Year"
-        },
-        {
-          "name": "Field1",
-          "value": "Value1"
-        }
-      ],
-      "approvedCreditLimit": {
-        "amountLabel": "$ 2M",
-        "symbol": "$",
-        "amountValue": 2000000
-      },
-      "bankReference": "Pending",
-      "createdDate": "10/10/2019",
-      "customerId": 6,
-      "customerName": "United Heat and Power INC",
-      "customerNumber": "HR123242342",
-      "recommendedCreditLimit": {
-        "amountLabel": "$ 2M",
-        "amountValue": 2000000,
-        "symbol": "$"
-      },
-      "requestId": 1007,
-      "riskClass": {
-        "category": "LOW",
-        "label": "LOW RISk",
-        "priority": 3
-      },
-      "timeLapsed": "Today",
-      "tradeReference": "Pending"
-    }
-  ]
+    ]
 }
