@@ -342,38 +342,38 @@ components:
           type: integer
           description: Internal customer request unique id
           example: 1001
-    recommendedCreditLimit:
-      type: array
-      description: Credit limit recommended by system
-      items:
-        $ref: '#/components/schemas/Currency'
-    approvedCreditLimit:
-      type: array
-      description: Credit limit approved
-      items:
-        $ref: '#/components/schemas/Currency'
-    riskClass:
-      type: array
-      description: calculated risk class for customer
-      items:
-        $ref: '#/components/schemas/RiskClass'
-    createdDate:
-      type: string
-      example: 2019-04-12
-    timeLapsed:
-      type: string
-      example: toDay
-    bankReference:
-      type: string
-      example: Available
-    tradeReference:
-      type: string
-      example: Pending
-    applicationInfo:
-      type: array
-      description: application information
-      items:
-        $ref: '#/components/schemas/ApplicationInfo'
+        recommendedCreditLimit:
+          type: array
+          description: Credit limit recommended by system
+          items:
+            $ref: '#/components/schemas/Currency'
+        approvedCreditLimit:
+          type: array
+          description: Credit limit approved
+          items:
+            $ref: '#/components/schemas/Currency'
+        riskClass:
+          type: array
+          description: calculated risk class for customer
+          items:
+            $ref: '#/components/schemas/RiskClass'
+        createdDate:
+          type: string
+          example: 2019-04-12T00:00:00.000Z
+        timeLapsed:
+          type: string
+          example: toDay
+        applicationInfo:
+          type: array
+          description: application information
+          items:
+            $ref: '#/components/schemas/ApplicationInfo'
+        references:
+          type: array
+          description: Bank and trade reference details
+          nullable: true
+          items:
+            $ref: '#/components/schemas/References'
     ApplicationInfo:
       type: object
       properties:
