@@ -19,6 +19,7 @@ const sendCorrespondence = require('./sendCorrespondence');
 const getEmailTemplateDetails = require('./getEmailTemplateDetails');
 const changeCreditLimit = require('./changeCreditLimit');
 const rejectCustomer = require('./rejectCustomer');
+const viewFile = require('./viewFile');
 
 const router = express.Router();
 
@@ -28,8 +29,8 @@ router.use('/getCustomerCreditScoreInfo.do', getCustomerCreditScoreInfo);
 router.use('/getCustomerFinancialMetrics.do', getCustomerFinancialMetrics);
 router.use('/getApplicationAndCompanyInfo.do', getApplicationAndCompanyInfo);
 router.use(
-  '/getCustomerCreditReportMetrics.do',
-  getCustomerCreditReportMetrics,
+    '/getCustomerCreditReportMetrics.do',
+    getCustomerCreditReportMetrics
 );
 router.use('/getCustomerInsights.do', getCustomerInsights);
 router.use('/getAllCamNotesList.do', getAllCamNotesList);
@@ -44,5 +45,6 @@ router.use('/sendCorrespondence.do', sendCorrespondence);
 router.use('/getEmailTemplateDetails.do', getEmailTemplateDetails);
 router.use('/changeCreditLimit.do', changeCreditLimit);
 router.use('/rejectCustomer.do', rejectCustomer);
+router.use('/viewFile.do', viewFile);
 
 module.exports = router;
