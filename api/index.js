@@ -7,6 +7,7 @@ const swaggerUi = require('swagger-ui-express');
 const swaggerDoc = require('./swagger/swagger.json');
 const routes = require('./routes');
 const notificationWebSocket = require('./lib/notificationWebSocket');
+const notificationData = require('../data/index');
 
 const app = express();
 const port = 4000;
@@ -20,7 +21,11 @@ app.use('/crd', routes);
 app.use('/docs/v1', swaggerUi.serve, swaggerUi.setup(swaggerDoc));
 
 // eslint-disable-next-line no-console
-const server = app.listen(port, () => console.log(`Example app listening on port ${port}!`),);
+const server = app.listen(port, () => console.log(`Mock server listening on port ${port}!`));
 
 // Setup websocket connection
-notificationWebSocket.init(server);
+const wsPromise = notificationWebSocket.init(server);
+
+wsPromise.then((socket) => {
+  notificationWebSocket.send(socket, notificationData);
+});

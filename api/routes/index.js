@@ -29,8 +29,8 @@ router.use('/getCustomerCreditScoreInfo.do', getCustomerCreditScoreInfo);
 router.use('/getCustomerFinancialMetrics.do', getCustomerFinancialMetrics);
 router.use('/getApplicationAndCompanyInfo.do', getApplicationAndCompanyInfo);
 router.use(
-    '/getCustomerCreditReportMetrics.do',
-    getCustomerCreditReportMetrics
+  '/getCustomerCreditReportMetrics.do',
+  getCustomerCreditReportMetrics,
 );
 router.use('/getCustomerInsights.do', getCustomerInsights);
 router.use('/getAllCamNotesList.do', getAllCamNotesList);
