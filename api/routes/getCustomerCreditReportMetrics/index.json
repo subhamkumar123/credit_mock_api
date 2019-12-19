@@ -22,6 +22,42 @@
               "CD - Below Average Grade"
             ],
             "value": "30"
+          },
+          {
+            "comments": "8+ is good",
+            "cutOff1Value": 60,
+            "fieldType": "string",
+            "isAcceptable": false,
+            "maxValue": 100,
+            "minValue": 0,
+            "name": "D & B",
+            "possibleValues": [
+              "AA - Highest Grade",
+              "AB - Good Grade",
+              "BB - Upper Medium Grade",
+              "BC - Lower Medium Grade",
+              "CC - Average Grade",
+              "CD - Below Average Grade"
+            ],
+            "value": "CC"
+          },
+          {
+            "comments": "8+ is good",
+            "cutOff1Value": 750,
+            "fieldType": "number",
+            "isAcceptable": true,
+            "maxValue": 900,
+            "minValue": 500,
+            "name": "Commercial",
+            "possibleValues": [
+              "AA - Highest Grade",
+              "AB - Good Grade",
+              "BB - Upper Medium Grade",
+              "BC - Lower Medium Grade",
+              "CC - Average Grade",
+              "CD - Below Average Grade"
+            ],
+            "value": "800"
           }
         ],
         "agencyLogoPath": "yet to decide",
